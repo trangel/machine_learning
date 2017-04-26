@@ -1,5 +1,5 @@
 # Data-Science
 
 [Under construction]
-Data science basic algorithms applied to real databases. 
 
+Python implementation of data science algorithms applied to real databases. 
