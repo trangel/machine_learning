@@ -3,3 +3,4 @@
 [Under construction]
 
 Python implementation of data science algorithms applied to real databases. 
+See the Wiki documentation.
