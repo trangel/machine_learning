@@ -11,7 +11,7 @@ See details in the <a href="https://github.com/trangel/Data-Science/wiki">Wiki</
 
 Examples are open with jupyter-notebook:
 
-Logistic Regression:
+1. Logistic Regression:
 
 https://github.com/trangel/Data-Science/blob/master/logistic-regression.ipynb
 
