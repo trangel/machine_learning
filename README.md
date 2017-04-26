@@ -7,6 +7,7 @@ See the Wiki documentation.
 
 Examples (open with jupyter-notebook):
 
-Logistic Regression
+Logistic Regression:
+
 https://github.com/trangel/Data-Science/blob/master/logistic-regression.ipynb
 
