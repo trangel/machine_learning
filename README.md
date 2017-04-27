@@ -10,8 +10,14 @@ I hope this can be useful for the general public.
 See details in the <a href="https://github.com/trangel/Data-Science/wiki">Wiki</a>
 
 Examples are open with jupyter-notebook:
-
-1. Logistic Regression:
-
-https://github.com/trangel/Data-Science/blob/master/logistic-regression.ipynb
-
+<p>
+1. Logistic Regression: <br />
+<ul>
+  <li>Two cathegories, two features. 
+  [<a href="https://github.com/trangel/Data-Science/blob/master/logistic-regression.ipynb"> ipynb </a>].
+  </li>
+  <li>Multiple cathegories, two features (sciki-learn). 
+    [<a href="https://github.com/trangel/Data-Science/blob/master/logistic-regression-sciki.ipynb"> ipynb </a>].
+  </li>
+</ul>
+</p>
