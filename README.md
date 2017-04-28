@@ -11,7 +11,7 @@ See details in the <a href="https://github.com/trangel/Data-Science/wiki">Wiki</
 
 Examples are open with jupyter-notebook:
 <p>
-1. Logistic Regression: <br />
+1. Classification [supervised learning]: <br />
 <ul>
   <li>Two cathegories, two features. 
   [<a href="https://github.com/trangel/Data-Science/blob/master/logistic-regression.ipynb"> ipynb </a>].
