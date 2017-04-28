@@ -19,5 +19,11 @@ Examples are open with jupyter-notebook:
   <li>Multiple cathegories, two features (sciki-learn). 
     [<a href="https://github.com/trangel/Data-Science/blob/master/logistic-regression-sciki.ipynb"> ipynb </a>].
   </li>
+  <li>Multiple cathegories and features (sciki-learn). 
+    [<a href="https://github.com/trangel/Data-Science/blob/master/seeds-sciki-mfeatures.ipynb"> ipynb </a>].
+  </li>
+  <li>Finding the important features (sciki-learn). 
+    [<a href="https://github.com/trangel/Data-Science/blob/master/plot_forest_importances.ipynb"> ipynb </a>].
+  </li>
 </ul>
 </p>
