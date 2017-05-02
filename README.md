@@ -26,7 +26,7 @@ Examples are open with jupyter-notebook:
     [<a href="https://github.com/trangel/Data-Science/blob/master/plot_forest_importances.ipynb"> ipynb </a>].
   </li>
   <li>Putting everything to work to analyse a real dataset. 
-    [<a href="https://github.com/trangel/Data-Science/blob/master/plot_forest_importances.ipynb"> ipynb </a>].
+    [<a href="https://github.com/trangel/Data-Science/blob/master/UCL-adult-vectorizer.ipynb"> ipynb </a>].
   </li>    
 </ul>
 </p>
