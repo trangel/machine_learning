@@ -27,7 +27,7 @@ Examples are open with jupyter-notebook:
     [<a href="https://github.com/trangel/Data-Science/blob/master/UCL-adult-vectorizer.ipynb"> ipynb </a>].
   </li>
   <li>Working with the MNIST dataset. LDA dimensionality reduction and regression models.
-    [<a href="https://github.com/trangel/Data-Science/blob/master/MNIST\ dimensionality\ reduction.ipynb"> ipynb </a>].
+    [<a href="https://github.com/trangel/Data-Science/blob/master/MNIST-dimensionality-reduction.ipynb"> ipynb </a>].
   </li>    
 </ul>
 </p>
