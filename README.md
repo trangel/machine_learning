@@ -1,8 +1,6 @@
 # Data-Science
 
-[Under construction]
-
-Python implementation of data science algorithms applied to real databases.
+Python examples of data science algorithms applied to real databases.
 
 This contains some examples of the usage of deep learning tools to analyze databases.
 I hope this can be useful for the general public.
@@ -25,8 +23,11 @@ Examples are open with jupyter-notebook:
   <li>Finding the important features (sciki-learn). 
     [<a href="https://github.com/trangel/Data-Science/blob/master/plot_forest_importances.ipynb"> ipynb </a>].
   </li>
-  <li>Putting everything to work to analyze a real dataset. 
+  <li>Testing regression models in a real dataset. Dimensionality reduction. Vectorization.
     [<a href="https://github.com/trangel/Data-Science/blob/master/UCL-adult-vectorizer.ipynb"> ipynb </a>].
+  </li>
+  <li>Working with the MNIST dataset. LDA dimensionality reduction and regression models.
+    [<a href="https://github.com/trangel/Data-Science/blob/master/MNIST\ dimensionality\ reduction.ipynb"> ipynb </a>].
   </li>    
 </ul>
 </p>
