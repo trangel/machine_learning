@@ -26,7 +26,7 @@ Examples are open with jupyter-notebook:
   <li>Testing regression models in a real dataset. Dimensionality reduction. Vectorization.
     [<a href="https://github.com/trangel/Data-Science/blob/master/UCL-adult-vectorizer.ipynb"> ipynb </a>].
   </li>
-  <li>Working with the MNIST dataset. LDA dimensionality reduction and regression models.
+  <li>Working with the MNIST dataset. LDA and PCA dimensionality reduction and regression models.
     [<a href="https://github.com/trangel/Data-Science/blob/master/MNIST-dimensionality-reduction.ipynb"> ipynb </a>].
   </li>    
 </ul>
