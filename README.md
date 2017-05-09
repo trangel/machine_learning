@@ -5,8 +5,6 @@ Python examples of data science algorithms applied to real databases.
 This contains some examples of the usage of deep learning tools to analyze databases.
 I hope this can be useful for the general public.
 
-See details in the <a href="https://github.com/trangel/Data-Science/wiki">Wiki</a>
-
 Examples are open with jupyter-notebook:
 <p>
 1. Classification [supervised learning]: <br />
