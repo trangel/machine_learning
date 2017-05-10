@@ -26,6 +26,9 @@ Examples are open with jupyter-notebook:
   </li>
   <li>Working with the MNIST dataset. LDA and PCA dimensionality reduction and regression models.
     [<a href="https://github.com/trangel/Data-Science/blob/master/MNIST-dimensionality-reduction.ipynb"> ipynb </a>].
-  </li>    
+  </li>   
+  <li>Working with the MNIST dataset (2). A neural network.
+    [<a href="https://github.com/trangel/Data-Science/blob/master/MNIST-neural-network.ipynb"> ipynb </a>].
+  </li>   
 </ul>
 </p>
