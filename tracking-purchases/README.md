@@ -15,6 +15,8 @@ This is a solution to the project defined at the Insight GitHub site [link.](htt
 This code aa
 
 # Dependencies
-
+python 3.6
+pandas
+numpy
 
 # Run instructions

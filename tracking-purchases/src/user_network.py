@@ -1,9 +1,21 @@
+"""
+Classes defining the user network.
+This is implemented as a graph:
+each "user" is a vertex of the "user_network" graph.
+"""
 debug=False
 
 class user:
+    """
+    Definition of a user object:
+    id: str, user id.
+    friends: set, user friends.
+    social_network: list, social network of user.
+        The degree of social network is in the variable "social_network.network_degree" 
+    """
     def __init__(self,key):
         self.id = key
-        self.friends = set() #set
+        self.friends = set()
         self.social_network=[]
 
 class user_network:
