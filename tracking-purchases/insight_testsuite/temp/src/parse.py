@@ -52,13 +52,13 @@ def parse_log_file(df,g,file_names,file_type):
             id1=str(dic['id1'])
             id2=str(dic['id2'])
             g.add_friend(id1,id2)
-            g.update_friend_list()
+            g.update_social_network()
             #g.show_social_networks()
         elif( event_type == 'unfriend' ):
             id1=str(dic['id1'])
             id2=str(dic['id2'])
             g.del_friend(id1,id2)
-            g.update_friend_list()
+            g.update_social_network()
             #g.show_social_networks()
         elif ( event_type == 'purchase' ):
             purchase_index=purchase_index+1
