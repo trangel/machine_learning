@@ -38,3 +38,4 @@ You can define the names of input/output files as:
 
 `python src/anomaly\_detection.py -i1 <batch_log_fname> -i2 <stream_log_fname> -o <output_fname>`
 
+Note that input files are always in directory "input\_log" and output files are in "output\_log".
