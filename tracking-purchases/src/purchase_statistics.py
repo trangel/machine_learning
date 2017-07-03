@@ -1,7 +1,7 @@
-from user_network import user_network as user_network
-import pandas as pd
 
 def get_purchase_statistics(purchase,g,df):
+    from user_network import user_network
+    import pandas as pd
     """
     Gets purchase statistics based on the history of purchases.
 
