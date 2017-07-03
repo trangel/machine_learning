@@ -1,7 +1,5 @@
 
 def get_purchase_statistics(purchase,g,df):
-    from user_network import user_network
-    import pandas as pd
     """
     Gets purchase statistics based on the history of purchases.
 
@@ -24,6 +22,9 @@ def get_purchase_statistics(purchase,g,df):
         std, numpy float, standard deviation for the history of purchases.
         anomalous, logical, whether or not the purchase if flagged as anomalous. 
     """
+    from user_network import user_network
+    import pandas as pd
+
     # Finds if a purchase is anomalous
     user=purchase['id']
     amount=purchase['amount']

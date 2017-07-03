@@ -1,2 +1,5 @@
 datasets/mnist_train.csv
 datasets/mnist_test.csv
+*.swp
+*~
+*.swo
