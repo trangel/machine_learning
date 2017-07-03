@@ -1,3 +1,6 @@
+"""
+Program that solves the anomaly detection insight problem.
+"""
 def main():
     """
     Main routine that runs the anomaly detection algorithm.
