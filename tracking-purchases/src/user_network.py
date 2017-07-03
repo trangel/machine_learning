@@ -68,12 +68,24 @@ class user_network:
         Adds a user to the network.
         The new user is identified by a key (user ID).
         "num_users" variable is increased by 1.
+
+        -------------
+        Arguments
+        key, str: user ID
         """
         self.num_users = self.num_users + 1
         new_user = user(key)
         self.user_list[key] = new_user
 
     def if_notpresent_add_user(self,key):
+        """
+        Verify if user is already defined in the network.
+        If not present, this calls "add_user" to add it.
+
+        -------------
+        Arguments
+        key, str: user ID
+        """
         if key not in self.user_list:
             self.add_user(key)
 
