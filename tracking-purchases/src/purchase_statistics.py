@@ -2,6 +2,28 @@ from user_network import user_network as user_network
 import pandas as pd
 
 def get_purchase_statistics(purchase,g,df):
+    """
+    Gets purchase statistics based on the history of purchases.
+
+    -----------
+    Arguments
+    purchase, dic, dictionary containing details of the purchase:
+        user, str, user ID
+        amount, str, amount in purchase
+
+
+    g, dic, dictionary containing the user network.
+        For details, see user_network.py
+
+    df, dataframe, pandas dataframe containing the history of purchases.
+
+    --------------
+    Output
+    purchase_stats, dict, contains:
+        mean, numpy float, statistical mean for the history of purchases.
+        std, numpy float, standard deviation for the history of purchases.
+        anomalous, logical, whether or not the purchase if flagged as anomalous. 
+    """
     # Finds if a purchase is anomalous
     user=purchase['id']
     amount=purchase['amount']
@@ -23,6 +45,21 @@ def get_purchase_statistics(purchase,g,df):
             return eval_purchase(purchase_history,amount)
 
 def eval_purchase(purchase_history,amount):
+    """
+    Evaluates the statistical mean and average for the history of purchases.
+    
+    --------------
+    Arguments
+    purchase_history, numpy array, history of purchases.
+    amount, numpy float, amount of current purchase.
+
+    --------------
+    Output
+    purchase_stats, dict, contains:
+        mean, numpy float, statistical mean for the history of purchases.
+        std, numpy float, standard deviation for the history of purchases.
+        anomalous, logical, whether or not the purchase if flagged as anomalous. 
+    """
     import numpy as np
     # Get mean and standard deviaton:
     # Several methods can get the mean and standard deviation:
@@ -41,6 +78,17 @@ def eval_purchase(purchase_history,amount):
     return purchase_stats
 
 def truncate(n):
+    """
+    Truncates a number to 2 decimals
+
+    _____________
+    Argument
+    n, float, number
+    
+    -------------
+    Output
+    Returns a string with the number truncate to two decimals.
+    """
     from math import floor
     nn=floor((n) * 10**2) / 10**2
     return "%.2f" % (nn) 
