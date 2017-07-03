@@ -33,8 +33,8 @@ With default input/output files:
 
 `python src/anomaly_detection.py` 
 
-By default the input/output file names are: "batch\log.json", "stream\_log.json" and "flagged\_purchases.json".
-Note that input files are always in directory "input\_log" and output files are in "output\_log".
+By default the input/output file names are: *batch\_log.json*, *stream\_log.json* and *flagged\_purchases.json*.
+Note that input files are always in directory *input\_log* and output files are in *output\_log*.
 
 You can define the names of input/output files:
 
