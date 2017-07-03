@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#python ./src/process_log.py ./log_input/batch_log.json ./log_input/stream_log.json ./log_output/flagged_purchases.json
 
 INPUT=src/anomaly_detection.py
 
-python $INPUT
+#python $INPUT
+python $INPUT ./src/process_log.py -i1 "batch_log.json" -i2 "stream_log.json" -o "flagged_purchases.json"

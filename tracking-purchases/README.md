@@ -24,3 +24,6 @@ numpy
 json
 
 # Run instructions
+       print 'test.py -i1 <batch_log_fname> -i2 <stream_log_fname> -o <output_fname>'
+-h
+

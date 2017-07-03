@@ -1,26 +1,48 @@
+"""
+Routines to parse input files.
+This call routines to fill in the purchases database and to build the network of users.
+"""
+
 def parse_log_file(df,g,file_names,file_type):
     """
+    Routine that parses an input "log_file".
 
+    ------------
     Arguments:
-    file_type: int, 1 for batch_log_file
-                    2 for stream_log_file
+    df, pandas dataframe, dataframe of purchase history.
+    g, dic, users network. 
+        See details in user_network.py
+    file_names, dic, input/output file names. Contains:
+          batch_log_fname, str, full path to batch_log file
+          stream_log_fname, str, full path to stream_log file
+          output_fname, str, full path to output file
+    file_type: int, 1 for batch_log_file type
+                    2 for stream_log_file type
+
+    ------------
+    Side effects:
+    Updates the purchases dataframe.
+    Updates the users network.
+    Calls routines to flag a purchase as anomalous. 
+
     """
     import numpy as np
     import pandas as pd
     from ast import literal_eval  
     from purchase_statistics import get_purchase_statistics
     from json import dumps
- 
+
+    # Check that arguments are correct: 
     if ( (file_type != 1) & ( file_type != 2 ) ):
         print("Error found in parse_log_file, file_type should be 1 or 2")
         exit(1)
 
-    # Read input files:
+    # Input/Output file names:
     if ( file_type == 1 ):
-        input_file = file_names['batch_log']
+        input_file = file_names['batch_log_fname']
     elif ( file_type == 2 ):
-        input_file = file_names['stream_log']
-        output_file = file_names['flagged_purchases']
+        input_file = file_names['stream_log_fname']
+        output_file = file_names['output_fname']
         f_out = open(output_file,"w")
     f_in = open(input_file,"r")
 
@@ -41,31 +63,34 @@ def parse_log_file(df,g,file_names,file_type):
 
     # Read rest of the file and construct network
     purchase_index=0
+    # Iterate on lines in input file:
     for line in f_in.readlines():
         try:
             dic=literal_eval(line)
         except:
+            # If erroneous file, skip
             continue
+        # Extract event_type and timestamp into variables:
         event_type=dic['event_type']
         timestamp=dic['timestamp']
+        # Add a new friend if event_type = befriend
         if ( event_type == 'befriend' ):
             id1=str(dic['id1'])
             id2=str(dic['id2'])
             g.add_friend(id1,id2)
             g.update_social_network()
-            #g.show_social_networks()
+        # Remove a friend if event_type = unfriend
         elif( event_type == 'unfriend' ):
             id1=str(dic['id1'])
             id2=str(dic['id2'])
             g.del_friend(id1,id2)
             g.update_social_network()
-            #g.show_social_networks()
+        # Purchase event:
         elif ( event_type == 'purchase' ):
             purchase_index=purchase_index+1
             uid=str(dic['id'])
             amount=np.float(dic['amount'])
             # Add new row to dataset:
-            #newrow=[timestamp,purchase_index,uid,amount]
             newrow=[timestamp,uid,amount]
             df.loc[len(df.values)]=newrow
             # Sort by timestamp in descending order, and then by index in ascending order.
@@ -75,8 +100,10 @@ def parse_log_file(df,g,file_names,file_type):
             # Update purchase statistics:
             if ( file_type == 2 ):
                 purchase={"id": uid, "amount": amount}
+                # Evaluate if purchase is anomalous
                 purchase_stats=get_purchase_statistics(purchase,g,df)
                 if ( purchase_stats['anomalous'] ):
+                    # If anomalous, write an entry into output file:
                     flagged_purchase={"event_type": "purchase",
                     "timestamp": timestamp,
                     "id": uid,
@@ -85,8 +112,10 @@ def parse_log_file(df,g,file_names,file_type):
                     "sd": purchase_stats['sd']}
                     f_out.write(dumps(flagged_purchase))
                     #
-    #g.show_social_networks()
+    # Close input/output files
     f_in.close()
     if ( file_type == 2 ):
         f_out.close()
+
+    # Return updated database of purchases
     return df

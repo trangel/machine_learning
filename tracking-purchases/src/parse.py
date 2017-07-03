@@ -13,9 +13,9 @@ def parse_log_file(df,g,file_names,file_type):
     g, dic, users network. 
         See details in user_network.py
     file_names, dic, input/output file names. Contains:
-          batch_log, str, full path to "batch_log" file
-          stream_log, str, full path to "stream_log" file
-          flagged_purchases, str, full path to "flagged_purchases" file
+          batch_log_fname, str, full path to batch_log file
+          stream_log_fname, str, full path to stream_log file
+          output_fname, str, full path to output file
     file_type: int, 1 for batch_log_file type
                     2 for stream_log_file type
 
@@ -39,10 +39,10 @@ def parse_log_file(df,g,file_names,file_type):
 
     # Input/Output file names:
     if ( file_type == 1 ):
-        input_file = file_names['batch_log']
+        input_file = file_names['batch_log_fname']
     elif ( file_type == 2 ):
-        input_file = file_names['stream_log']
-        output_file = file_names['flagged_purchases']
+        input_file = file_names['stream_log_fname']
+        output_file = file_names['output_fname']
         f_out = open(output_file,"w")
     f_in = open(input_file,"r")
 
