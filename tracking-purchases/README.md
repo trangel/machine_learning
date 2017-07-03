@@ -13,6 +13,8 @@ This is a solution to the project defined at the Insight GitHub site [link.](htt
 # Summary of approach
 This code aa
 
+
+For details on the source code, please see:
 [Source code documentation](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/doc.html)
 
 # Dependencies
