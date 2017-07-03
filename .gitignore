@@ -1,5 +1,7 @@
 datasets/mnist_train.csv
 datasets/mnist_test.csv
+tracking-purchases/images/graph.pdf
+tracking-purchases/images/graph.pages
 *.swp
 *~
 *.swo
