@@ -4,6 +4,8 @@
 3. [Dependencies](README.md#dependencies)
 4. [Run instructions](README.md#run-instructions)
 
+* Link to source code documentation [link](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/doc.html).
+* Link to test suite documentation [link](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/insight_testsuite/doc.html).
 
 # Definition of the code
 
@@ -14,8 +16,8 @@ This is a solution to the project defined at the Insight GitHub site [link.](htt
 This code aa
 
 
-For details on the source code, please see:
-[Source code documentation](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/doc.html)
+For details on the source code, please see the
+[source code documentation](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/doc.html).
 
 # Dependencies
 
