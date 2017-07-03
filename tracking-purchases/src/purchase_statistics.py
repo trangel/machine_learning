@@ -1,3 +1,6 @@
+"""
+Routines to get statistics on the history of purchases, and to decide whether or not to tag a given purchase as anomalous.
+"""
 
 def get_purchase_statistics(purchase,g,df):
     """
