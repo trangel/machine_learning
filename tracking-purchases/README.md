@@ -18,12 +18,20 @@ For details on the source code, please see:
 [Source code documentation](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/doc.html)
 
 # Dependencies
-python 3.6
-pandas
-numpy
-json
+
+The following packages are required:
+
+
+* python 3.6
+* pandas
+* numpy
+* json
 
 # Run instructions
-       print 'test.py -i1 <batch_log_fname> -i2 <stream_log_fname> -o <output_fname>'
--h
+
+With default input/output files:
+python anomaly\_detection.py 
+
+You can define the names of input/output files as:
+python anomaly\_detection.py -i1 <batch_log_fname> -i2 <stream_log_fname> -o <output_fname>'
 
