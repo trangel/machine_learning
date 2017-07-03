@@ -35,19 +35,14 @@ each&nbsp;"<a href="#user">user</a>"&nbsp;is&nbsp;a&nbsp;vertex&nbsp;of&nbsp;the
 <font color="#000000" face="helvetica, arial"><a name="user">class <strong>user</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
     
 <tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt>Contains&nbsp;the&nbsp;definition&nbsp;of&nbsp;a&nbsp;<a href="#user">user</a>.<br>
-&nbsp;<br>
--------------<br>
-Attributes:<br>
+<td colspan=2><tt>Definition&nbsp;of&nbsp;a&nbsp;<a href="#user">user</a>&nbsp;<a href="builtins.html#object">object</a>:<br>
 id:&nbsp;str,&nbsp;<a href="#user">user</a>&nbsp;id.<br>
 friends:&nbsp;set,&nbsp;<a href="#user">user</a>&nbsp;friends.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Friends&nbsp;change&nbsp;constantly,&nbsp;and&nbsp;therefore&nbsp;a&nbsp;"set"&nbsp;type&nbsp;is&nbsp;appropriate,&nbsp;as&nbsp;it&nbsp;allows&nbsp;for&nbsp;constant&nbsp;changes.<br>
 social_network:&nbsp;list,&nbsp;social&nbsp;network&nbsp;of&nbsp;<a href="#user">user</a>.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;list&nbsp;is&nbsp;redefined&nbsp;every&nbsp;time&nbsp;the&nbsp;social_network&nbsp;changes.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;degree&nbsp;of&nbsp;social&nbsp;network&nbsp;is&nbsp;set&nbsp;in&nbsp;the&nbsp;variable&nbsp;"social_network.network_degree"<br>&nbsp;</tt></td></tr>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;degree&nbsp;of&nbsp;social&nbsp;network&nbsp;is&nbsp;in&nbsp;the&nbsp;variable&nbsp;"social_network.network_degree"<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
-<dl><dt><a name="user-__init__"><strong>__init__</strong></a>(self, key)</dt><dd><tt>Initialize&nbsp;a&nbsp;<a href="#user">user</a>&nbsp;with&nbsp;zero&nbsp;friends&nbsp;and&nbsp;no&nbsp;social&nbsp;network.</tt></dd></dl>
+<dl><dt><a name="user-__init__"><strong>__init__</strong></a>(self, key)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -63,37 +58,11 @@ Data descriptors defined here:<br>
 <td colspan=3 valign=bottom>&nbsp;<br>
 <font color="#000000" face="helvetica, arial"><a name="user_network">class <strong>user_network</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
     
-<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt>Graph&nbsp;<a href="builtins.html#object">object</a>&nbsp;containg&nbsp;the&nbsp;<a href="#user">user</a>&nbsp;network.<br>
-&nbsp;<br>
--------------<br>
-Attributes:<br>
-user_list:&nbsp;dic,&nbsp;dictionary&nbsp;that&nbsp;contains&nbsp;a&nbsp;user_list.&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;dictionary&nbsp;has&nbsp;as&nbsp;keys&nbsp;the&nbsp;<a href="#user">user</a>&nbsp;ids<br>
-&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;"<a href="#user">user</a>"&nbsp;objects&nbsp;as&nbsp;values.<br>
-&nbsp;<br>
-num_users:&nbsp;int,&nbsp;number&nbsp;of&nbsp;users&nbsp;in&nbsp;the&nbsp;user_list<br>
-network_degree:&nbsp;int,&nbsp;degree&nbsp;defining&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;<br>
-&nbsp;&nbsp;&nbsp;friends&nbsp;networks.<br>
-tracked_number_of_purchases:&nbsp;int,&nbsp;parameter&nbsp;that&nbsp;tells<br>
-&nbsp;&nbsp;&nbsp;number&nbsp;of&nbsp;purchases&nbsp;of&nbsp;the&nbsp;users&nbsp;network&nbsp;to&nbsp;keep&nbsp;track<br>
-&nbsp;<br>
-------------<br>
-Methods:<br>
-add_friend<br>
-add_user<br>
-del_friend<br>
-if_notpresent_add_user<br>
-get_friends<br>
-get_user<br>
-get_users<br>
-show_social_networks&nbsp;<br>
-update_friend_list<br>&nbsp;</tt></td></tr>
-<tr><td>&nbsp;</td>
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
 <dl><dt><a name="user_network-__contains__"><strong>__contains__</strong></a>(self, n)</dt></dl>
 
-<dl><dt><a name="user_network-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;the&nbsp;<a href="#user">user</a>&nbsp;network&nbsp;with&nbsp;an&nbsp;empty&nbsp;dictionary,&nbsp;zero&nbsp;users&nbsp;and&nbsp;network_degree&nbsp;of&nbsp;2.</tt></dd></dl>
+<dl><dt><a name="user_network-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
 
 <dl><dt><a name="user_network-__iter__"><strong>__iter__</strong></a>(self)</dt></dl>
 

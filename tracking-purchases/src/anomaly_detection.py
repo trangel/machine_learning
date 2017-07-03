@@ -23,7 +23,7 @@ def main():
     df=pd.DataFrame(columns=columns)
 
     # Parse the "batch_log.json" file
-    file_type=1
+    file_type=1;
     df=parse_log_file(df,g,file_names,file_type)
     #g.show_social_networks()
 

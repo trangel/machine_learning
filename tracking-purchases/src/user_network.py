@@ -7,23 +7,61 @@ debug=False
 
 class user:
     """
-    Definition of a user object:
+    Contains the definition of a user.
+    
+    -------------
+    Attributes:
     id: str, user id.
     friends: set, user friends.
+        Friends change constantly, and therefore a "set" type is appropriate, as it allows for constant changes.
     social_network: list, social network of user.
-        The degree of social network is in the variable "social_network.network_degree" 
+        This list is redefined every time the social_network changes.
+        The degree of social network is set in the variable "social_network.network_degree" 
     """
     def __init__(self,key):
+        """
+        Initialize a user with zero friends and no social network.
+        """
         self.id = key
         self.friends = set()
         self.social_network=[]
 
 class user_network:
+    """
+    Graph object containg the user network.
+
+    -------------
+    Attributes:
+    user_list: dic, dictionary that contains a user_list. 
+        The dictionary has as keys the user ids
+        and "user" objects as values.
+
+    num_users: int, number of users in the user_list
+    network_degree: int, degree defining the size of the 
+       friends networks.
+    tracked_number_of_purchases: int, parameter that tells
+       number of purchases of the users network to keep track
+
+    ------------
+    Methods:
+    add_friend
+    add_user
+    del_friend
+    if_notpresent_add_user
+    get_friends
+    get_user
+    get_users
+    show_social_networks 
+    update_friend_list
+    """
     def __init__(self):
+        """
+        Initialize the user network with an empty dictionary, zero users and network_degree of 2.
+        """
         self.user_list = {}
         self.num_users = 0
-        self.network_degree=2 #Initizalize as 2
-        self.tracked_number_of_purchases=0
+        self.network_degree=2
+        self.tracked_number_of_purchases=0 
 
     def add_user(self,key):
         self.num_users = self.num_users + 1

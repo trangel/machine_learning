@@ -5,7 +5,6 @@ def get_purchase_statistics(purchase,g,df):
     # Finds if a purchase is anomalous
     user=purchase['id']
     amount=purchase['amount']
-    tracked_number_of_purchases=g.tracked_number_of_purchases
 
     # Get social network for that user:
     social_network=g.get_user(user).social_network
@@ -16,7 +15,7 @@ def get_purchase_statistics(purchase,g,df):
         return purchase_stats
     else:
         purchase_history=\
-        df.loc[df['id'].isin(social_network)].head(tracked_number_of_purchases)['amount'].values
+        df.loc[df['id'].isin(social_network)].head(g.tracked_number_of_purchases)['amount'].values
         if ( len(purchase_history) < 2 ):
             purchase_stats['anomalous':False]
             return purchase_stats

@@ -11,8 +11,9 @@ This code is a real-time platform to analyze purchases within a social network o
 This is a solution to the project defined at the Insight GitHub site [link.](https://github.com/InsightDataScience/anomaly_detection/blob/master/README.md)
 
 # Summary of approach
-
 This code aa
+
+[Source code documentation](http://htmlpreview.github.com/?https://github.com/trangel/DataScience/tracking-purchases/user-network.html)
 
 # Dependencies
 python 3.6
