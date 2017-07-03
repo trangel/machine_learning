@@ -21,5 +21,6 @@ For details on the source code, please see:
 python 3.6
 pandas
 numpy
+json
 
 # Run instructions

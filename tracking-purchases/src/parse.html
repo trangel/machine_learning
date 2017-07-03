@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module parse</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>parse</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/rangel/Data-Science/tracking-purchases/src/parse.py">/Users/rangel/Data-Science/tracking-purchases/src/parse.py</a></font></td></tr></table>
+    <p><tt>Routines&nbsp;to&nbsp;parse&nbsp;input&nbsp;files.<br>
+This&nbsp;call&nbsp;routines&nbsp;to&nbsp;fill&nbsp;in&nbsp;the&nbsp;purchases&nbsp;database&nbsp;and&nbsp;to&nbsp;build&nbsp;the&nbsp;network&nbsp;of&nbsp;users.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-parse_log_file"><strong>parse_log_file</strong></a>(df, g, file_names, file_type)</dt><dd><tt>Routine&nbsp;that&nbsp;parses&nbsp;an&nbsp;input&nbsp;"log_file".<br>
+&nbsp;<br>
+------------<br>
+Arguments:<br>
+df,&nbsp;pandas&nbsp;dataframe,&nbsp;dataframe&nbsp;of&nbsp;purchase&nbsp;history.<br>
+g,&nbsp;dic,&nbsp;users&nbsp;network.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;See&nbsp;details&nbsp;in&nbsp;user_network.py<br>
+file_names,&nbsp;dic,&nbsp;input/output&nbsp;file&nbsp;names.&nbsp;Contains:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;batch_log,&nbsp;str,&nbsp;full&nbsp;path&nbsp;to&nbsp;"batch_log"&nbsp;file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stream_log,&nbsp;str,&nbsp;full&nbsp;path&nbsp;to&nbsp;"stream_log"&nbsp;file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flagged_purchases,&nbsp;str,&nbsp;full&nbsp;path&nbsp;to&nbsp;"flagged_purchases"&nbsp;file<br>
+file_type:&nbsp;int,&nbsp;1&nbsp;for&nbsp;batch_log_file&nbsp;type<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;for&nbsp;stream_log_file&nbsp;type<br>
+&nbsp;<br>
+------------<br>
+Side&nbsp;effects:<br>
+Updates&nbsp;the&nbsp;purchases&nbsp;dataframe.<br>
+Updates&nbsp;the&nbsp;users&nbsp;network.<br>
+Calls&nbsp;routines&nbsp;to&nbsp;flag&nbsp;a&nbsp;purchase&nbsp;as&nbsp;anomalous.</tt></dd></dl>
+</td></tr></table>
+</body></html>
