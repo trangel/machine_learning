@@ -13,7 +13,14 @@ This code is a real-time platform to analyze purchases within a social network o
 This is a solution to the project defined at the Insight GitHub site [link.](https://github.com/InsightDataScience/anomaly_detection/blob/master/README.md)
 
 # Summary of approach
-This code aa
+
+The approached is based on a **graph** to keep the user network and a **database** of purchases. 
+These objects are updated as the input files are read, and used to flag anomalous purchases.
+
+## User network graph
+<img src="./images/social-network.png" width="150">
+
+## Database of purchases
 
 
 For details on the source code, please see the
