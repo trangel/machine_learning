@@ -64,6 +64,11 @@ class user_network:
         self.tracked_number_of_purchases=0 
 
     def add_user(self,key):
+        """
+        Adds a user to the network.
+        The new user is identified by a key (user ID).
+        "num_users" variable is increased by 1.
+        """
         self.num_users = self.num_users + 1
         new_user = user(key)
         self.user_list[key] = new_user
