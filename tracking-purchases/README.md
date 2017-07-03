@@ -18,7 +18,7 @@ The approached is based on a **graph** to keep the user network and a **database
 These objects are updated as the input files are read, and used to flag anomalous purchases.
 
 ## User network graph
-<img src="./images/social-network.png" width="150">
+<img src="./images/graph.png" width="150">
 
 ## Database of purchases
 
