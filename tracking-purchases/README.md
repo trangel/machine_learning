@@ -13,7 +13,7 @@ This is a solution to the project defined at the Insight GitHub site [link.](htt
 # Summary of approach
 This code aa
 
-[Source code documentation](http://htmlpreview.github.com/?https://github.com/trangel/DataScience/tracking-purchases/user-network.html)
+[Source code documentation](http://htmlpreview.github.com/?https://github.com/trangel/DataScience/tracking-purchases/src/user-network.html)
 
 # Dependencies
 python 3.6
