@@ -31,10 +31,10 @@ The following packages are required:
 
 With default input/output files:
 
-`python anomaly\_detection.py` 
+`python src/anomaly_detection.py` 
 
 You can define the names of input/output files as:
 
 
-python anomaly\_detection.py -i1 <batch_log_fname> -i2 <stream_log_fname> -o <output_fname>'
+`python src/anomaly\_detection.py -i1 <batch_log_fname> -i2 <stream_log_fname> -o <output_fname>`
 
