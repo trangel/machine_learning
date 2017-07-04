@@ -26,7 +26,7 @@ The *user_network* class defines the graph and all its methods.
 
 In graph theory, a user is a graph vertex and graph edges are the user friends.
 The graph is implemented with python dictionaries.
-Dictionaries can be dynamically changed. Having indexed entries, dictionaries allow for fast access to data, and hence are ideal for graphs.
+Dictionaries are dynamic objects with indexed entries, which allow for fast access to data, and hence are ideal for graphs.
 For more details on the user network class, see 
 [user network class](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/user_network.html).
 
