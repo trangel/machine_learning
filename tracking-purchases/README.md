@@ -48,6 +48,7 @@ While input files are parsed, each line is saved into a python dictionary.
 The *event_type* dictionary key is read, and then the corresponding routine is called for each kind of event.
 See details of the parser in [parser](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/parser.html).
 
+
 * For *unfriend* and *friend* events, functions of the *user network* class are called to update the network of users: users can be added, friends are updated. Moreover, the user network of friends of a given degree is updated.
 See details in
 [user network class](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/user_network.html).

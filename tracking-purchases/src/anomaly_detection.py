@@ -27,7 +27,7 @@ def main(argv):
 
     # Import user defined functions/objects:
     from user_network import user_network
-    from parse import parse_log_file
+    from parser import parse_log_file
 
     # Get file names and command line arguments:
     file_names=get_command_line_arguments(argv)
