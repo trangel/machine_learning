@@ -25,8 +25,13 @@ If *debug=True* in the sources, the history of purchase database is printed into
 This is useful to verify that purchases with same timestamp are indeed ordered by event index (order of event in input files), as required.
 
 * **Test 4**
-
-
+I divide users in two classes: *ID=* *a1*, *a2*, *a3* and *a4* belong to the first class, and *ID=* *b1* to *b4* to the second class.
+User network degree is high *D=4*.
+Users of the each class are friends only to themselves, i.e., there are no friends belonging to different classes.
+I feed a database of around 2000 records with purchases: amounts range from 1 to 10 for class 1, and amounts range from 100 to 1000 for class 2.
+I add 1 purchase for each user in the range of 100 to 1000.
+The latter purchases are to be flagged only for users of class 1.
+This test shows that user networks are working correctly.
 
 <!------
 #  <li> <b>Test 2.</b> Test for command line arguments.
