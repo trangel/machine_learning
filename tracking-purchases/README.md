@@ -20,10 +20,20 @@ These objects are updated as the input files are read, and used to flag anomalou
 ## User network graph
 <img src="./images/graph.png" width="150">
 
+The user network (see Figure) is implemented with a graph.
+The *user_network* class defines the graph and all its methods.
+
+In the graph each user is a *user* object.
+In graph theory, a user is a vertex and graph edges are the user friends.
+The graph is implemented with python dictionaries.
+Dictionaries can be dynamically changed, and provide an index to access data fast, and hence they are ideal for graphs.
+For more details on the user network class, click
+[user network class](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/user_network.html).
+
 ## Database of purchases
 
 
-For details on the source code, please see the
+For more details on the source code, please see the
 [source code documentation](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/doc.html).
 
 # Dependencies
