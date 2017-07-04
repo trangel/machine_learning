@@ -1,10 +1,14 @@
 # Test suite
 
-To test that the database is sorted correctly (by timestamp and event order) set *debug=True* in the sources. This will write down the database in a file, that can be checked externally.
+## Notes:
 
-To verify that user networks of degree *D* are correct, set *debug=True* and the network for each user will be printed out.
+* To test that the purchases database is sorted correctly (by timestamp and event order), set *debug=True* in the sources. This will write down the database in a file, which can be checked externally.
 
-Here I detail the tests suite:
+* To verify that user networks of degree *D* are correct, set *debug=True* and the network for each user will be printed out.
+
+## Test suite
+
+Here I detail the test suite:
 
 *  **Test 1** 
 Test provided by insights.
