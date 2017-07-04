@@ -55,7 +55,7 @@ See details in
 
 * For a *purchase* event, the purchases database is updated as explained above.
 If reading the *stream_log* file, purchase analysis are calculated to decide whether or not the purchase is anomalous.
-For the fast calculation of purchase statistics, the data is passed in nump y arrays. 
+For the fast calculation of purchase statistics, the data is passed in numpy arrays. 
 See details in
 [purchase statistics](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/purchase_statistics.html).
 

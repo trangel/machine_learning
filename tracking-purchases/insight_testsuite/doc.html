@@ -6,21 +6,28 @@
 <h2>Documentation for test suite:</h2>
 
 <ul>
-  <li>
-    <a href="http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/user_network.html">
-user_network.html</a>
+  <li> <b>Test 1.</b> Test provided by insights.
   </li>
-  <li>
-    <a href="http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/purchase_statistics.html">
-purchase_statistics.html</a>
+  <li> <b>Test 2.</b> Test command line arguments.
+  Input/Output file names are passed as command line arguments.
+  <li> <b>Test 3.</b> Test for user network.
+  For a network of degree 2 (D=2), the algorithm prints out the user network.
+  Only "befriend" and "unfriend" events appear. 
+  This tests the functions for adding and removing users/friends from the network.
   </li>
-  <li>
-    <a href="http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/parse.html">
-parse.html</a>
+  <li> <b>Test 4.</b> Test for history-of-purchases database.
+  A small database of purchases is constructed and printed out at the end.
+  This tests that the database is correctly built and sorted, i.e., at end entries should be ordered by timeframe and order of appearance. 
   </li>
-  <li>
-    <a href="http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/anomaly_detection.html">
-anomaly_detection.html</a>
+  <li> <b>Test 5.</b> Test for purchase statistics.
+  A small database is constructed.
+  At end the history of purchase, mean and standard deviation are printed out.
+  This checks that statistics for the last purchase are correct, and hence it tests the routines that evaluate purchase statistics.
+  </li>
+  <li> <b>Test 6.</b> Tests performance in a larger database.
+  A database of few thousands of records is built.
+  This test can serve to check performance of the algorigthm. 
+  Execution time is output for these means.
   </li>
 </ul>  
 </body>
