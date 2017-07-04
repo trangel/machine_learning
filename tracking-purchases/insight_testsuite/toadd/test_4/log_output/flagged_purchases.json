@@ -1,8 +1,0 @@
-{"event_type": "purchase", "timestamp": "2008-06-13 00:00:00", "id": "8", "amount": "9.0", "mean": "7.00", "sd": "0.00"}
-{"event_type": "purchase", "timestamp": "2008-06-13 00:00:00", "id": "5", "amount": "8.0", "mean": "7.00", "sd": "0.00"}
-{"event_type": "purchase", "timestamp": "2008-06-13 00:00:00", "id": "6", "amount": "8.0", "mean": "7.00", "sd": "0.00"}
-{"event_type": "purchase", "timestamp": "2008-06-13 00:00:00", "id": "1", "amount": "102.0", "mean": "5.46", "sd": "1.82"}
-{"event_type": "purchase", "timestamp": "2008-06-13 00:00:00", "id": "2", "amount": "873.0", "mean": "5.60", "sd": "2.57"}
-{"event_type": "purchase", "timestamp": "2008-06-13 00:00:00", "id": "3", "amount": "1164.0", "mean": "4.90", "sd": "2.48"}
-{"event_type": "purchase", "timestamp": "2008-06-13 00:00:00", "id": "4", "amount": "954.0", "mean": "5.75", "sd": "1.72"}
-{"event_type": "purchase", "timestamp": "2008-06-13 00:00:00", "id": "6", "amount": "1201.0", "mean": "122.10", "sd": "347.30"}

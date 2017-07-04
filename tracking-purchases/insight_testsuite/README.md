@@ -22,7 +22,7 @@ This shows that the algorithm can deal with larger databases, and verifies that 
 * **Test 3**
 This test is similar to Test 2, but here the value of *timestamp* is set to the same for all purchases.
 If *debug=True* in the sources, the history of purchase database is printed into a file. 
-This is useful to check that the database is ordered by event index (order in the input files), for entries with the same timestamp, as required.
+This is useful to verify that purchases with same timestamp are indeed ordered by event index (order of event in input files), as required.
 
 * **Test 4**
 
