@@ -2,7 +2,7 @@
 
 ## Notes:
 
-* To test that the purchases database is sorted correctly (by timestamp and event order), set *debug=True* in the sources. This will write down the database in a file, which can be checked externally.
+* To test that the purchases database is sorted correctly (by timestamp and event order), set *debug=True* in the sources. This will write down the database in a file *df.cvs*, which can be checked externally.
 
 * To verify that user networks of degree *D* are correct, set *debug=True* and the network for each user will be printed out.
 
@@ -14,10 +14,17 @@ Here I detail the test suite:
 Test provided by insights.
 
 * **Test 2**
-A network of 4 users and 1000 purchases is given in the *batch_log* file.
+A network of 4 users and 1000 random purchases is given in the *batch_log* file.
 Initially all purchases amounts range between 1 and 10.
 In *batch_stream*, I add first 100 purchases with amounts in the same range, and 4 other purchases with amounts clearly above this range. The latter should be tagged as *anomalous*.
 This shows that the algorithm can deal with larger databases, and verifies that statistics are correct. 
+
+* **Test 3**
+This test is similar to Test 2, but here the value of *timestamp* is set to the same for all purchases.
+If *debug=True* in the sources, the history of purchase database is printed into a file. 
+This is useful to check that the database is ordered by event index (order in the input files), for entries with the same timestamp, as required.
+
+* **Test 4**
 
 
 

@@ -30,6 +30,8 @@ def main(argv):
     from user_network import user_network
     from parser import parse_log_file
 
+    debug=True
+
     start_time = timeit.default_timer()
 
     # Get file names and command line arguments:
@@ -52,8 +54,11 @@ def main(argv):
     # Parse stream_log_file
     file_type=2
     df,purchase_index=parse_log_file(df,g,file_names,file_type,purchase_index)
-    g.show_social_networks()
-    df.to_csv("df.csv")
+
+    # Print out social network and write database to file for debugging purposes
+    if ( debug ):
+        g.show_social_networks()
+        df.to_csv("df.csv")
 
     # Print out exection time:
     elapsed = timeit.default_timer() - start_time
