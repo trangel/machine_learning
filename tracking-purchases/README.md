@@ -14,7 +14,8 @@ This is a solution to the project defined at the Insight GitHub site [link.](htt
 
 # Summary of approach
 
-The approached is based on a **graph** to keep the user network and a **database** of purchases. 
+The approach is based on object oriented programing.
+A **graph** object stores the user network, while the history of purchases is recorded in a **database**. 
 These objects are updated as the input files are read, and used to flag anomalous purchases.
 
 ## User network graph
