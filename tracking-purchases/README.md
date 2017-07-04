@@ -24,10 +24,9 @@ These objects are updated as the input files are read, and used to flag anomalou
 The user network (see Figure) is implemented with a graph.
 The *user_network* class defines the graph and all its methods.
 
-In the graph each user is a *user* object.
-In graph theory, a user is a vertex and graph edges are the user friends.
+In graph theory, a user is a graph vertex and graph edges are the user friends.
 The graph is implemented with python dictionaries.
-Dictionaries can be dynamically changed, and index its entries for fast access to data, and hence they are ideal for graphs.
+Dictionaries can be dynamically changed. Having indexed entries, dictionaries allow for fast access to data, and hence are ideal for graphs.
 For more details on the user network class, see 
 [user network class](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/user_network.html).
 
