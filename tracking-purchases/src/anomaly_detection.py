@@ -13,6 +13,14 @@ def main(argv):
        Default "stream_log.json"
     output_fname, str, output file name
        Default "flagged_purchases.json"
+
+    ------------
+    Objects
+    df, pandas dataframe, database of history of purchases. Columns:
+        timestamp, str, time of event.
+        id, str, user ID.
+        amount, str, amount of transaction. 
+  
     """
     # Import packages
     import pandas as pd
@@ -29,7 +37,6 @@ def main(argv):
     g = user_network()
     
     # Create an empty database to keep the history of purchases
-    #columns=["timestamp","purchase_index","id","amount"]
     columns=["timestamp","id","amount"]
     df=pd.DataFrame(columns=columns)
 
