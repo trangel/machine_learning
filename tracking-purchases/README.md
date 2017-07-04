@@ -27,7 +27,7 @@ In the graph each user is a *user* object.
 In graph theory, a user is a vertex and graph edges are the user friends.
 The graph is implemented with python dictionaries.
 Dictionaries can be dynamically changed, and index its entries for fast access to data, and hence they are ideal for graphs.
-For more details on the user network class, click 
+For more details on the user network class, see 
 [user network class](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/user_network.html).
 
 ## Database of purchases
@@ -37,11 +37,29 @@ For more details on the user network class, click
 | 2017-06-13 11:33:01  | 1  | 16.83  |
 | 2016-06-13 11:32:02  | 2  | 122.00 |
 
-For more details on the user network class, click 
+
+A pandas database, as shown above is used to keep the history of purchases.
+The database is updated every time a new purchase arrives.
+To fascilitate data analysis, the data is sorted by timestamp and order of appearance.
+
+## Parser
+
+Input files are parsed.
+Each line is saved into a python dictionary.
+The *event_type* dictionary key is read, and then the corresponding routine is called for each event type.
+See details of the parser in [parser](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/parser.html).
+
+* For *unfriend* and *friend* events, functions of the *user network* class are called to update the network of users: users can be added, friends are updated. Moreover, the user network of friends of a given degree is updated.
+See details in
 [user network class](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/user_network.html).
 
-For more details on the source code, please see the
-[source code documentation](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/doc.html).
+* For a *purchase* event, the purchases database is updated as explained above.
+If reading the *stream_log* file, purchase analysis are calculated to decide whether or not the purchase is anomalous.
+For the fast calculation of purchase statistics, the data is passed in nump y arrays. 
+See details in
+[purchase statistics](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/purchase_statistics.html).
+
+For more details on the source code, see [link](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/doc.html).
 
 # Dependencies
 
