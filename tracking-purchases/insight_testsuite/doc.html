@@ -8,8 +8,9 @@
 <ul>
   <li> <b>Test 1.</b> Test provided by insights.
   </li>
-  <li> <b>Test 2.</b> Test command line arguments.
+  <li> <b>Test 2.</b> Test for command line arguments.
   Input/Output file names are passed as command line arguments.
+  This tests that command line arguments correctly work.
   <li> <b>Test 3.</b> Test for user network.
   For a network of degree 2 (D=2), the algorithm prints out the user network.
   Only "befriend" and "unfriend" events appear. 
@@ -20,11 +21,11 @@
   This tests that the database is correctly built and sorted, i.e., at end entries should be ordered by timeframe and order of appearance. 
   </li>
   <li> <b>Test 5.</b> Test for purchase statistics.
-  A small database is constructed.
-  At end the history of purchase, mean and standard deviation are printed out.
-  This checks that statistics for the last purchase are correct, and hence it tests the routines that evaluate purchase statistics.
+  A small database is constructed. 
+  At the end, for a given set of purchases, the mean and standard deviation are printed out.
+  This checks that statistics correct, i.e., it tests routines to evaluate purchase statistics.
   </li>
-  <li> <b>Test 6.</b> Tests performance in a larger database.
+  <li> <b>Test 6.</b> Tests for performance in a larger database.
   A database of few thousands of records is built.
   This test can serve to check performance of the algorigthm. 
   Execution time is output for these means.
