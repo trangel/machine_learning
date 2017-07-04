@@ -210,10 +210,10 @@ class user_network:
         output_friend_set, set, set of friends of friends 
         """
 
-        output_friend_set=set() 
+        output_friend_set=input_friend_set 
         for user_id in input_friend_set:
             friend_set=self.user_list[user_id].friends
-            output_friend_set=input_friend_set.union(friend_set)
+            output_friend_set=output_friend_set.union(friend_set)
         return(output_friend_set)
 
     def show_social_networks(self):

@@ -3,7 +3,7 @@ Routines to parse input files.
 This call routines to fill in the purchases database and to build the network of users.
 """
 
-def parse_log_file(df,g,file_names,file_type):
+def parse_log_file(df,g,file_names,file_type,purchase_index):
     """
     Routine that parses an input "log_file".
 
@@ -12,6 +12,7 @@ def parse_log_file(df,g,file_names,file_type):
     df, pandas dataframe, dataframe of purchase history.
     g, dic, users network. 
         See details in user_network.py
+    purchase_index, int, keeps track of purchase event ordering
     file_names, dic, input/output file names. Contains:
           batch_log_fname, str, full path to batch_log file
           stream_log_fname, str, full path to stream_log file
@@ -62,7 +63,6 @@ def parse_log_file(df,g,file_names,file_type):
         g.tracked_number_of_purchases=int(dic['T'])
 
     # Read rest of the file and construct network
-    purchase_index=0
     # Iterate on lines in input file:
     for line in f_in.readlines():
         try:
@@ -91,10 +91,11 @@ def parse_log_file(df,g,file_names,file_type):
             uid=str(dic['id'])
             amount=np.float(dic['amount'])
             # Add new row to dataset:
-            newrow=[timestamp,uid,amount]
+            #newrow=[timestamp,uid,amount]
+            newrow=[purchase_index,timestamp,uid,amount]
             df.loc[len(df.values)]=newrow
             # Sort by timestamp in descending order, and then by index in ascending order.
-            df=df.sort_values(by='timestamp',ascending=False)
+            df=df.sort_values(by=['timestamp','purchase_index'],ascending=[False,True])
             # If user is not in network, add it:
             g.if_notpresent_add_user(uid)
             # Update purchase statistics:
@@ -110,7 +111,7 @@ def parse_log_file(df,g,file_names,file_type):
                     "amount": str(amount),
                     "mean": purchase_stats['mean'],
                     "sd": purchase_stats['sd']}
-                    f_out.write(dumps(flagged_purchase))
+                    f_out.write("{}\n".format(dumps(flagged_purchase)))
                     #
     # Close input/output files
     f_in.close()
@@ -118,4 +119,4 @@ def parse_log_file(df,g,file_names,file_type):
         f_out.close()
 
     # Return updated database of purchases
-    return df
+    return df,purchase_index

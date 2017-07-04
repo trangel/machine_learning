@@ -24,10 +24,13 @@ def main(argv):
     """
     # Import packages
     import pandas as pd
+    import timeit
 
     # Import user defined functions/objects:
     from user_network import user_network
     from parser import parse_log_file
+
+    start_time = timeit.default_timer()
 
     # Get file names and command line arguments:
     file_names=get_command_line_arguments(argv)
@@ -37,19 +40,24 @@ def main(argv):
     g = user_network()
     
     # Create an empty database to keep the history of purchases
-    columns=["timestamp","id","amount"]
+    #columns=["timestamp","id","amount"]
+    columns=["purchase_index","timestamp","id","amount"]
     df=pd.DataFrame(columns=columns)
 
     # Parse the "batch_log.json" file
-    file_type=1;
-    df=parse_log_file(df,g,file_names,file_type)
+    file_type=1; purchase_index=0
+    df,purchase_index=parse_log_file(df,g,file_names,file_type,purchase_index)
     #g.show_social_networks()
 
     # Parse stream_log_file
     file_type=2
-    df=parse_log_file(df,g,file_names,file_type)
-    #g.show_social_networks()
-    #df.to_csv("df.csv")
+    df,purchase_index=parse_log_file(df,g,file_names,file_type,purchase_index)
+    g.show_social_networks()
+    df.to_csv("df.csv")
+
+    # Print out exection time:
+    elapsed = timeit.default_timer() - start_time
+    print("Execution time {}".format(elapsed))
 
 def get_full_file_names(batch_log_fname,stream_log_fname,output_fname):
     """
