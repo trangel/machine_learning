@@ -6,9 +6,6 @@ The routine "add_friend" will add an edge to the graph.
 Similarly, the routine "del_friend" removes an edge.
 """
 
-# Set this to True for debug option
-debug=False
-
 class user:
     """
     Contains the definition of a user.
@@ -140,8 +137,6 @@ class user_network:
         # This is a bidirectional graph
         self.user_list[user1].friends.add(user2)
         self.user_list[user2].friends.add(user1)
-        if ( debug ):
-            print("{} and {} are now friends".format(user1,user2))
 
     def del_friend(self,user1,user2):
         """
@@ -166,8 +161,6 @@ class user_network:
         USER2=self.user_list[user2] 
         if user1 in USER2.friends :
             USER2.friends.discard(user1)
-        if ( debug ):
-            print("{} and {} are no longer friends".format(user1,user2))
 
     def get_users(self):
         """

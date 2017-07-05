@@ -45,7 +45,8 @@ def main(argv):
     from user_network import user_network
     from parser import parse_log_file
 
-    debug=True
+    # Set debug to True to print out user network and save purchase database to file at the end of execution.
+    debug=False
 
     start_time = timeit.default_timer()
 
