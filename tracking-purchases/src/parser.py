@@ -6,7 +6,23 @@ This call routines to fill in the purchases database and to build the network of
 def parse_log_file(df,g,file_names,file_type,purchase_index):
     """
     Routine that parses an input "log_file".
+    
+    The procedure followed is:
 
+    1) If reading the "batch_log" file, extract the network degree (D) and tracked_number_of_purchases (T) parameters.
+
+    2) For all lines in the input log_file:
+        if event = befriend:
+            a) add friends/users to the user network.
+            b) update social network for each user.
+        if event = unfriend:
+            a) del friends/users from the user network.
+            b) update social network for each user.
+        if event = purchase:
+            a) add entry to purchase-history database, and sort database.
+            b) if database is too large, reduce its size
+            c) if reading "stream_log", check if purchase is anomalous. 
+ 
     ------------
     Arguments:
     df, pandas dataframe, dataframe of purchase history.
@@ -22,8 +38,8 @@ def parse_log_file(df,g,file_names,file_type,purchase_index):
 
     ------------
     Side effects:
-    Updates the purchases dataframe.
-    Updates the users network.
+    Updates the purchase-history database.
+    Updates the users network graph.
     Calls routines to flag a purchase as anomalous. 
 
     """
