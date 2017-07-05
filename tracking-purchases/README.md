@@ -4,7 +4,7 @@
 3. [Dependencies](README.md#dependencies)
 4. [Run instructions](README.md#run-instructions)
 
-* Link to source code documentation [link](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/doc.html).
+* Link to source code documentation [link](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/doc.html).
 * Link to test suite documentation [link](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/insight_testsuite/README.md).
 
 # Definition of the code
