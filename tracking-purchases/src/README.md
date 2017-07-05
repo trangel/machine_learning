@@ -1,17 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html><head><title>Source code documentation</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-</head><body bgcolor="#f0f0f8">
+# Source code documentation
 
-<h2>Documentation of sources</h2>
 Please click on the links for documentation of each source file.
 
 
-<ul>
-  <li>
-    <a href="http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/user_network.html">
-user_network.html</a>
-  </li>
+*    [user\_network.py](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/user_network.html)
+
+<!--
   <li>
     <a href="http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/purchase_statistics.html">
 purchase_statistics.html</a>
@@ -28,3 +22,4 @@ anomaly_detection.html</a>
 </body>
 </html>
 
+!-->
