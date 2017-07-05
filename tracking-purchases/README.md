@@ -49,25 +49,26 @@ Therefore, I drop the oldest entries, while keeping only the entries which are a
 See details in
 [database_operations](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/database_operations.html).
 
-For more details on the source code, see [link](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/README.md).
 
 
 ## Parser
 
-While input files are parsed, each line is saved into a python dictionary.
-The *event_type* dictionary key is read, and then the corresponding routine is called for each kind of event.
-See details of the parser in [parser](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/parser.html).
+While input files are parsed, each line read is saved into a python dictionary.
+Depending on the *event_type*, the corresponding routine is called for each kind of event:
 
-
-* For *unfriend* and *friend* events, functions of the *user network* class are called to update the network of users: users can be added, friends are updated. Moreover, the user network of friends of a given degree is updated.
+1. For *unfriend* and *friend* events, functions of the *user network* class are called to update the network of users: users can be added, friends are updated. Moreover, the user network of friends of a given degree is updated.
 See details in
 [user network class](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/user_network.html).
 
-* For a *purchase* event, the purchases database is updated as explained above.
+2. For a *purchase* event, the purchases database is updated as explained above.
 If reading the *stream_log* file, purchase analysis are calculated to decide whether or not the purchase is anomalous.
 For the fast calculation of purchase statistics, the data is passed in numpy arrays. 
 See details in
 [purchase statistics](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/purchase_statistics.html).
+
+See details of the parser in [parser](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/parser.html).
+
+For more details on the source code, see [link](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/README.md).
 
 # Dependencies
 
