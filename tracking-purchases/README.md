@@ -4,8 +4,8 @@
 3. [Dependencies](README.md#dependencies)
 4. [Run instructions](README.md#run-instructions)
 
-* Link to source code documentation [link](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/README.md).
-* Link to test suite documentation [link](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/insight_testsuite/README.md).
+* Link to **source-code documentation** [link](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/README.md).
+* Link to **test-suite documentation** [link](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/insight_testsuite/README.md).
 
 # Definition of the code
 
@@ -40,7 +40,7 @@ For more details on the user network class, see
 
 A pandas database, as shown above, is used to keep track of the history of purchases.
 The database is updated every time a new purchase arrives.
-To fascilitate data analysis, the data is sorted by timestamp and order of appearance.
+To facilitate data analysis, the data is sorted by timestamp and order of appearance.
 
 ### Keeping a small database
 A strategy I followed to improve performance is to keep the size of the database small.
