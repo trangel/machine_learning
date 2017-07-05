@@ -56,17 +56,17 @@ See details in
 While input files are parsed, each line read is saved into a python dictionary.
 Depending on the *event_type*, the corresponding routine is called for each kind of event:
 
-1. For *unfriend* and *friend* events, functions of the *user network* class are called to update the network of users: users can be added, friends are updated. Moreover, the user network of friends of a given degree is updated.
+1. **Unfriend** and **befriend** events. Functions of the *user network class* are called to update the network of users, e.g., users can be added or friends updated. Moreover, the user network of friends of a given degree is updated.
 See details in
 [user network class](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/user_network.html).
 
-2. For a *purchase* event, the purchases database is updated as explained above.
-If reading the *stream_log* file, purchase analysis are calculated to decide whether or not the purchase is anomalous.
+2. **Purchase** event. The purchase-hystory database is updated as explained above.
+If reading the *stream_log file*, purchase analysis are calculated to decide whether or not the purchase is anomalous.
 For the fast calculation of purchase statistics, the data is passed in numpy arrays. 
 See details in
 [purchase statistics](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/purchase_statistics.html).
 
-See details of the parser in [parser](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/parser.html).
+More details of the parser are found in [parser](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/parser.html).
 
 For more details on the source code, see [link](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/README.md).
 
