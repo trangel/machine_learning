@@ -14,17 +14,17 @@ This is a solution to the project defined at the Insight GitHub site [link.](htt
 
 # Summary of approach
 
-The approach is based on object oriented programing.
+The approach is based on object oriented programming.
 A **graph** object stores the user network, while the history of purchases is recorded in a **database**. 
 These objects are updated as the input files are read, and used to flag anomalous purchases.
 
 ## User network graph
 <img src="./images/graph.png" width="150">
 
-The user network (see Figure) is implemented with a graph.
-The *user_network* class defines the graph and all its methods.
+The user network (see the figure above) is implemented with a graph.
+The *user_network class* defines the graph and its methods.
 
-In graph theory, a user is a graph vertex and graph edges are the user friends.
+In graph-theory terms, a user is a *graph vertex* and *graph edges* are user's friends.
 The graph is implemented with python dictionaries.
 Dictionaries are dynamic objects with indexed entries, which allow for fast access to data, and hence are ideal for graphs.
 For more details on the user network class, see 
@@ -38,9 +38,19 @@ For more details on the user network class, see
 | 2016-06-13 11:32:02  | 2  | 122.00 |
 
 
-A pandas database, as shown above, is used to keep the history of purchases.
+A pandas database, as shown above, is used to keep track of the history of purchases.
 The database is updated every time a new purchase arrives.
 To fascilitate data analysis, the data is sorted by timestamp and order of appearance.
+
+### Keeping a small database
+A strategy I followed to improve performance is to keep the size of the database small.
+For large databases, performance can be drastically deteriorated. 
+Therefore, I drop the oldest entries, while keeping only the entries which are actually used to tag purchases as anomalous. 
+See details in
+[database_operations](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/database_operations.html).
+
+For more details on the source code, see [link](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/README.md).
+
 
 ## Parser
 
@@ -58,14 +68,6 @@ If reading the *stream_log* file, purchase analysis are calculated to decide whe
 For the fast calculation of purchase statistics, the data is passed in numpy arrays. 
 See details in
 [purchase statistics](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/purchase_statistics.html).
-
-## Keeping a small database
-A strategy I followed to improve performance is to keep the size of the database small.
-Specially for large databases, performance can be deteriorated drastically when keeping all history of purchases into the database. Therefore, I drop the older entries that are not used to tag purchases as anomalous. 
-See details in
-[database_operations](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/database_operations.html).
-
-For more details on the source code, see [link](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/README.md).
 
 # Dependencies
 
