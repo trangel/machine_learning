@@ -40,8 +40,11 @@ def get_purchase_statistics(purchase,g,df):
         purchase_stats['anomalous']=False
         return purchase_stats
     else:
+        df2=\
+        df.loc[df['id'].isin(social_network)]
+        #df2=df2.sort_values(by=['timestamp','purchase_index'],ascending=[False,True])
         purchase_history=\
-        df.loc[df['id'].isin(social_network)].head(g.tracked_number_of_purchases)['amount'].values
+        df2.head(g.tracked_number_of_purchases)['amount'].values
         if ( len(purchase_history) < 2 ):
             purchase_stats['anomalous']=False
             return purchase_stats

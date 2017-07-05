@@ -30,8 +30,13 @@ def parse_log_file(df,g,file_names,file_type,purchase_index):
     import numpy as np
     import pandas as pd
     from ast import literal_eval  
-    from purchase_statistics import get_purchase_statistics
     from json import dumps
+    # My own routines:
+    from purchase_statistics import get_purchase_statistics
+    from database_operations import db_add_entry,db_reduce
+
+    # Initialize db_size with the purchase_index
+    db_size=purchase_index
 
     # Check that arguments are correct: 
     if ( (file_type != 1) & ( file_type != 2 ) ):
@@ -88,16 +93,19 @@ def parse_log_file(df,g,file_names,file_type,purchase_index):
         # Purchase event:
         elif ( event_type == 'purchase' ):
             purchase_index=purchase_index+1
+            db_size=db_size+1
             uid=str(dic['id'])
             amount=np.float(dic['amount'])
-            # Add new row to dataset:
-            #newrow=[timestamp,uid,amount]
-            newrow=[purchase_index,timestamp,uid,amount]
-            df.loc[len(df.values)]=newrow
-            # Sort by timestamp in descending order, and then by index in ascending order.
-            df=df.sort_values(by=['timestamp','purchase_index'],ascending=[False,True])
             # If user is not in network, add it:
             g.if_notpresent_add_user(uid)
+            # Add new row to dataset:
+            newrow=[purchase_index,timestamp,uid,amount]
+            df=db_add_entry(df,newrow)
+            # If dataset is getting big, reduce its size:
+            if ( (g.num_users*g.tracked_number_of_purchases*2) < db_size ):
+                df=db_reduce(df,g)
+                db_size=len(df)
+
             # Update purchase statistics:
             if ( file_type == 2 ):
                 purchase={"id": uid, "amount": amount}

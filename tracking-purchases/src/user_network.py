@@ -224,5 +224,5 @@ class user_network:
         for user in self.get_users():
             friends=self.get_user(user).social_network
             friends=', '.join(friends)
-            print("user: {0} friends: {1}".format(user,friends))
+            print("user: {0} social network: {1}".format(user,friends))
          
