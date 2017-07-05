@@ -59,7 +59,13 @@ For the fast calculation of purchase statistics, the data is passed in numpy arr
 See details in
 [purchase statistics](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/purchase_statistics.html).
 
-For more details on the source code, see [link](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/doc.html).
+## Keeping a small database
+A strategy I followed to improve performance is to keep the size of the database small.
+Specially for large databases, performance can be deteriorated drastically when keeping all history of purchases into the database. Therefore, I drop the older entries that are not used to tag purchases as anomalous. 
+See details in
+[database_operations](http://htmlpreview.github.com/?https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/database_operations.html).
+
+For more details on the source code, see [link](https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/README.md).
 
 # Dependencies
 
