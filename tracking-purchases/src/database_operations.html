@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module database_operations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>database_operations</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">
+<a href="https://github.com/trangel/Data-Science/blob/master/tracking-purchases/src/database_operations.py">database_operations.py</a></font></td></tr></table>
+    <p><tt>Functions&nbsp;dealing&nbsp;with&nbsp;the&nbsp;database&nbsp;of&nbsp;purchases</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-db_add_entry"><strong>db_add_entry</strong></a>(df, newrow)</dt><dd><tt>Adds&nbsp;a&nbsp;new&nbsp;entry&nbsp;into&nbsp;a&nbsp;pandas&nbsp;dataframe<br>
+&nbsp;<br>
+--------------<br>
+Arguments:<br>
+df,&nbsp;pandas&nbsp;dataframe,&nbsp;contains&nbsp;history&nbsp;of&nbsp;purchases<br>
+newrow,&nbsp;dictionary,&nbsp;new&nbsp;row&nbsp;to&nbsp;be&nbsp;added&nbsp;to&nbsp;database<br>
+&nbsp;<br>
+--------------<br>
+Side&nbsp;effects:<br>
+Database&nbsp;is&nbsp;sorted&nbsp;by&nbsp;timestamp,&nbsp;and&nbsp;then&nbsp;by&nbsp;purchase&nbsp;index.</tt></dd></dl>
+ <dl><dt><a name="-db_reduce"><strong>db_reduce</strong></a>(df, g)</dt><dd><tt>Reduces&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;dataset.<br>
+It&nbsp;keeps&nbsp;only&nbsp;a&nbsp;number&nbsp;of&nbsp;records=(tracked_number_of_purchases+1)&nbsp;per&nbsp;user&nbsp;in&nbsp;the&nbsp;network.&nbsp;<br>
+The&nbsp;rest&nbsp;of&nbsp;entries&nbsp;are&nbsp;thrown&nbsp;since&nbsp;these&nbsp;are&nbsp;not&nbsp;taken&nbsp;into&nbsp;account&nbsp;to&nbsp;evaluate&nbsp;purchase&nbsp;statistics.&nbsp;<br>
+&nbsp;<br>
+--------------<br>
+Arguments:<br>
+df,&nbsp;pandas&nbsp;dataframe,&nbsp;contains&nbsp;history&nbsp;of&nbsp;purchases<br>
+g,&nbsp;dic,&nbsp;user_network&nbsp;class&nbsp;(see&nbsp;user_network.py)<br>
+&nbsp;<br>
+--------------<br>
+Side&nbsp;effects:<br>
+Database&nbsp;is&nbsp;sorted&nbsp;by&nbsp;timestamp,&nbsp;and&nbsp;then&nbsp;by&nbsp;purchase&nbsp;index.</tt></dd></dl>
+</td></tr></table>
+</body></html>
