@@ -5,6 +5,21 @@ def main(argv):
     """
     Main routine that runs the anomaly detection algorithm.
 
+    The procedure followed is:
+
+    1) Get command line arguments (if any).
+
+    2) Initialize a graph structure for the user network.
+
+    3) Initialize a database to keep track of the history of purchases.
+ 
+    4) Parse "batch_log" file.
+        While parsing the purchase-history database and the user-network graph are updated.
+
+    5) Parse "stream_log" file.
+       Here the database and graph are updated as in 4).
+       Purchase events are evaluated as anomalous or not. 
+
     ---------------
     Optional arguments:
     batch_log_fname, str, batch_log file name
@@ -42,15 +57,12 @@ def main(argv):
     g = user_network()
     
     # Create an empty database to keep the history of purchases
-    #columns=["timestamp","id","amount"]
     columns=["purchase_index","timestamp","id","amount"]
     df=pd.DataFrame(columns=columns)
 
     # Parse the "batch_log.json" file
     file_type=1; purchase_index=0
     df,purchase_index=parse_log_file(df,g,file_names,file_type,purchase_index)
-    #g.show_social_networks()
-
     # Parse stream_log_file
     file_type=2
     df,purchase_index=parse_log_file(df,g,file_names,file_type,purchase_index)

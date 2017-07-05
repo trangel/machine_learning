@@ -42,6 +42,21 @@ file_names,&nbsp;dic,&nbsp;contains&nbsp;absolute&nbsp;paths&nbsp;to&nbsp;input&
 &nbsp;&nbsp;&nbsp;&nbsp;output_fname:&nbsp;output&nbsp;file&nbsp;name&nbsp;including&nbsp;full&nbsp;path</tt></dd></dl>
  <dl><dt><a name="-main"><strong>main</strong></a>(argv)</dt><dd><tt>Main&nbsp;routine&nbsp;that&nbsp;runs&nbsp;the&nbsp;anomaly&nbsp;detection&nbsp;algorithm.<br>
 &nbsp;<br>
+The&nbsp;procedure&nbsp;followed&nbsp;is:<br>
+&nbsp;<br>
+1)&nbsp;Get&nbsp;command&nbsp;line&nbsp;arguments&nbsp;(if&nbsp;any).<br>
+&nbsp;<br>
+2)&nbsp;Initialize&nbsp;a&nbsp;graph&nbsp;structure&nbsp;for&nbsp;the&nbsp;user&nbsp;network.<br>
+&nbsp;<br>
+3)&nbsp;Initialize&nbsp;a&nbsp;database&nbsp;to&nbsp;keep&nbsp;track&nbsp;of&nbsp;the&nbsp;history&nbsp;of&nbsp;purchases.<br>
+&nbsp;<br>
+4)&nbsp;Parse&nbsp;"batch_log"&nbsp;file.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;While&nbsp;parsing&nbsp;the&nbsp;purchase-history&nbsp;database&nbsp;and&nbsp;the&nbsp;user-network&nbsp;graph&nbsp;are&nbsp;updated.<br>
+&nbsp;<br>
+5)&nbsp;Parse&nbsp;"stream_log"&nbsp;file.<br>
+&nbsp;&nbsp;&nbsp;Here&nbsp;the&nbsp;database&nbsp;and&nbsp;graph&nbsp;are&nbsp;updated&nbsp;as&nbsp;in&nbsp;4).<br>
+&nbsp;&nbsp;&nbsp;Purchase&nbsp;events&nbsp;are&nbsp;evaluated&nbsp;as&nbsp;anomalous&nbsp;or&nbsp;not.&nbsp;<br>
+&nbsp;<br>
 ---------------<br>
 Optional&nbsp;arguments:<br>
 batch_log_fname,&nbsp;str,&nbsp;batch_log&nbsp;file&nbsp;name<br>
@@ -49,6 +64,13 @@ batch_log_fname,&nbsp;str,&nbsp;batch_log&nbsp;file&nbsp;name<br>
 stream_log_fname,&nbsp;str,&nbsp;stream_log&nbsp;file&nbsp;name<br>
 &nbsp;&nbsp;&nbsp;Default&nbsp;"stream_log.json"<br>
 output_fname,&nbsp;str,&nbsp;output&nbsp;file&nbsp;name<br>
-&nbsp;&nbsp;&nbsp;Default&nbsp;"flagged_purchases.json"</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;Default&nbsp;"flagged_purchases.json"<br>
+&nbsp;<br>
+------------<br>
+Objects<br>
+df,&nbsp;pandas&nbsp;dataframe,&nbsp;database&nbsp;of&nbsp;history&nbsp;of&nbsp;purchases.&nbsp;Columns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;timestamp,&nbsp;str,&nbsp;time&nbsp;of&nbsp;event.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id,&nbsp;str,&nbsp;user&nbsp;ID.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;amount,&nbsp;str,&nbsp;amount&nbsp;of&nbsp;transaction.</tt></dd></dl>
 </td></tr></table>
 </body></html>
