@@ -32,10 +32,10 @@ For more details on the user network class, see
 
 ## Database of purchases
 
-| Timestamp            | id | amount |
-| -------------------- |:---| ------:|
-| 2017-06-13 11:33:01  | 1  | 16.83  |
-| 2016-06-13 11:32:02  | 2  | 122.00 |
+| timestamp            | purchase index |  usr id | amount |
+| -------------------- |---------------:| -------:| ------:|
+| 2017-06-13 11:33:01  |100             | 1       | 16.83  |
+| 2016-06-13 11:32:02  |101             | 2       | 122.00 |
 
 
 A pandas database, as shown above, is used to keep track of the history of purchases.
