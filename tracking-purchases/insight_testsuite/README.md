@@ -37,7 +37,7 @@ The latter purchases are to be flagged as anomalous only for users of class 1.
 If the above holds true, then this test shows that user networks are working correctly.
 
 * **Test 5**
-This is a larger dataset with 1200 entries.
+This is a larger dataset with 12,000 entries.
 This is to test the performance in a larger dataset.
 For example, to improve the performance, I intentionally reduce the size of the history-of-purchases dataset constantly, so that it never gets too big.
 This is done in the routine *db\_add\_entry.py* (see source doc.).
