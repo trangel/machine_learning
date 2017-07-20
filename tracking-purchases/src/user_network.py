@@ -53,7 +53,7 @@ class user_network:
     get_user
     get_users
     show_social_networks 
-    update_friend_list
+    update_social_network
     """
     def __init__(self):
         """
