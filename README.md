@@ -1,8 +1,15 @@
 # Data-Science
 
-Python examples of data science algorithms applied to real databases.
+## User network graph
+A user network graph in python.
+I keep track of purchases and tag anoumalous events.
+See [<a href="https://github.com/trangel/Data-Science/tracking-purchases"> graph </a>].
 
-This contains some examples of the usage of deep learning tools to analyze databases.
+## Basic machine-learning examples
+
+Python examples of data science algorithms applied to real databases.   
+This contains some examples of the usage of machine learning tools to analyze databases.
+I follow the topics in the machine learning introduction by Andrew Ng.   
 I hope this can be useful for the general public.
 
 Examples are open with jupyter-notebook:
