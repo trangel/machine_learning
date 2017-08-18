@@ -1,5 +1,14 @@
 # Data-Science
 
+## Content recommender
+This is part of the CDIPS Data Science 2017 Workshop.   
+We work on a content recommender based on Wikipedia articles.   
+This project makes use of generic data science tools: data extraction/cleaning, web scraping, natural language processing, machine learning models, web servers, using flask to query SQLite databases, and A/B testing to validate our recommender. 
+Click <a href="https://github.com/hannahlb/CDIPS_Content_Rec">here</a> to goto the repository.   
+Watch demo at
+[<a href="https://www.youtube.com/watch?v=uG6rSvYlhog&feature=youtu.be"> youtube </a>].
+
+
 ## User network graph
 A user network graph in python.
 I keep track of purchases and tag anoumalous events.
@@ -7,10 +16,7 @@ See [<a href="https://github.com/trangel/Data-Science/tree/master/tracking-purch
 
 ## Basic machine-learning examples
 
-Python examples of data science algorithms applied to real databases.   
-This contains some examples of the usage of machine learning tools to analyze databases.
-I follow the topics in the machine learning introduction by Andrew Ng.   
-I hope this can be useful for the general public.
+Python examples of data science algorithms applied to real databases, following the topics in the machine learning introduction by Andrew Ng.   
 
 Examples are open with jupyter-notebook:
 <p>
