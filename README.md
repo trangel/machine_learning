@@ -3,7 +3,7 @@
 ## User network graph
 A user network graph in python.
 I keep track of purchases and tag anoumalous events.
-See [<a href="https://github.com/trangel/Data-Science/tracking-purchases"> graph </a>].
+See [<a href="https://github.com/trangel/Data-Science/tree/master/tracking-purchases"> graph </a>].
 
 ## Basic machine-learning examples
 
