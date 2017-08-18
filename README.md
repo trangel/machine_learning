@@ -2,7 +2,6 @@
 
 ## Content recommender
 This is part of the CDIPS Data Science 2017 Workshop.   
-We work on a content recommender based on Wikipedia articles.   
 This project makes use of generic data science tools: data extraction/cleaning, web scraping, natural language processing, machine learning models, web servers, using flask to query SQLite databases, and A/B testing to validate our recommender. 
 Click <a href="https://github.com/hannahlb/CDIPS_Content_Rec">here</a> to goto the repository.   
 Watch demo at
