@@ -1,6 +1,6 @@
 # Statistics with python
 
-by **Tonatiuh Rangel ** 
+by Tonatiuh Rangel 
 
 ## Basics   
 
