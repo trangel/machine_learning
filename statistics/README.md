@@ -1,7 +1,8 @@
-# Statistics
+# Statistics with python
 
-These are notes on how to use python for statistics.   
+by **Tonatiuh Rangel ** 
 
+## Basics   
 
 1. [<a href="https://github.com/trangel/Data-Science/blob/master/statistics/PDF-CDF.ipynb">PDF-CDF </a>]: PDF and CDF plots with numpy
 
