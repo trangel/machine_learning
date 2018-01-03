@@ -1,0 +1,41 @@
+Write a sql query to find out the overall friend acceptance rate for a given date?
+
+(SELECT COUNT(a.*) AS total_sent FROM actions a GROUP BY Action);
+
+actions-# ;
+ total_sent 
+------------
+        300
+        136
+        164
+(3 rows)
+
+SELECT 
+SUM(CASE WHEN a.action = 'accept' THEN a.total_sent ELSE NULL END) AS accept,
+SUM(CASE WHEN a.action = 'send' THEN a.total_sent ELSE NULL END) AS sent,
+SUM(CASE WHEN a.action = 'reject' THEN a.total_sent ELSE NULL END) AS reject
+FROM
+(SELECT Action,COUNT(a.*) AS total_sent FROM actions a GROUP BY Action) AS a                                                              
+;
+actions-# ;
+ accept | sent | reject 
+--------+------+--------
+    164 |  300 |    136
+(1 row)
+
+
+SELECT b.accepted/b.sent AS acceptance_rate, b.rejected/b.sent AS reject_rate FROM
+(SELECT 
+SUM(CASE WHEN a.action = 'accept' THEN a.total_sent ELSE NULL END) AS accepted,
+SUM(CASE WHEN a.action = 'send' THEN a.total_sent ELSE NULL END) AS sent,
+SUM(CASE WHEN a.action = 'reject' THEN a.total_sent ELSE NULL END) AS rejected 
+FROM
+(SELECT Action,COUNT(a.*) AS total_sent FROM actions a GROUP BY Action) AS a 
+) AS b;
+
+    acceptance_rate     |      reject_rate       
+------------------------+------------------------
+ 0.54666666666666666667 | 0.45333333333333333333
+(1 row)
+
+

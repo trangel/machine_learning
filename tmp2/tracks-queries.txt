@@ -1,0 +1,33 @@
+How many users turned the feature on today? 
+
+SELECT EXTRACT(DATE FROM to_timestamp(timestamp)) FROM tracks; 
+?
+
+SELECT COUNT(DISTINCT(a.user)) FROM (
+SELECT
+r.user, 
+EXTRACT(YEAR FROM to_timestamp(r.timestamp)) AS year,
+EXTRACT(MONTH FROM to_timestamp(r.timestamp)) AS month, 
+EXTRACT(DAY FROM to_timestamp(r.timestamp)) AS day 
+FROM tracks r) AS a
+WHERE a.year = '2017'
+AND a.month = '12'
+AND a.day = '1'
+;
+
+SELECT COUNT(DISTINCT t.user), to_timestamp(t.timestamp)::date AS dates FROM tracks t  GROUP BY 2 HAVING to_timestamp(t.timestamp)::date='12-24-2017'::date;
+ count |   dates    
+-------+------------
+     8 | 2017-12-24
+(1 row)
+
+
+
+#WHERE EXTRACT(DATE to_timestamp(timestamp)) = TODAY;
+
+How many users have ever turned the feature on? 
+
+SELECT COUNT(DISTINCT(r.user)) FROM tracks r
+WHERE r.action = 'on';
+
+In a table that tracks the status of every user every day, how would you add today's data to it?  9 Answers
