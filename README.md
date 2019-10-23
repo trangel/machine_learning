@@ -16,10 +16,15 @@ See [<a href="https://github.com/trangel/Data-Science/tree/master/tracking-purch
 
 ## Deep learning    
 <p>
-* Deep learning AI assignments    
-  [<a href="https://github.com/trangel/Data-Science/blob/master/Deep learning ai"> dir </a>]        
-* Keras transfer learning
+<ul>
+<li> Deep learning AI assignments    
+  [<a href="https://github.com/trangel/Data-Science/blob/master/Deep learning ai"> dir </a>] 
+</li>
+<li> Keras transfer learning
   [<a href="https://github.com/trangel/Data-Science/blob/master/tensorflow/keras_transfer_learning"> dir </a>]    
+</li>
+</ul>
+</p>
 
 ## Very basic machine-learning examples
 
