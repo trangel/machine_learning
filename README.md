@@ -17,7 +17,8 @@ See [<a href="https://github.com/trangel/Data-Science/tree/master/tracking-purch
 ## Deep learning    
 <p>
 1. Deep learning AI assignments    
-  [<a href="https://github.com/trangel/Data-Science/blob/master/Deep learning ai"> dir </a>].        
+  [<a href="https://github.com/trangel/Data-Science/blob/master/Deep learning ai"> dir </a>].       
+ 
 2. Keras transfer learning
   [<a href="https://github.com/trangel/Data-Science/blob/master/tensorflow/keras_transfer_learning"> dir </a>]    
 
