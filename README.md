@@ -13,7 +13,15 @@ A user network graph in python.
 I keep track of purchases and tag anoumalous events.
 See [<a href="https://github.com/trangel/Data-Science/tree/master/tracking-purchases"> graph </a>].
 
-## Basic machine-learning examples
+
+## Deep learning    
+<p>
+1. Deep learning AI assignments    
+  [<a href="https://github.com/trangel/Data-Science/blob/master/Deep learning ai"> dir </a>].     
+2. Keras transfer learning
+  [<a href="https://github.com/trangel/Data-Science/blob/master/tensorflow/keras"> dir </a>].
+
+## Very basic machine-learning examples
 
 Python examples of data science algorithms applied to real databases, following the topics in the machine learning introduction by Andrew Ng.   
 
