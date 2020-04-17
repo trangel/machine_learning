@@ -13,7 +13,7 @@
 </p>
 
 ## Reinforcement learning
-[<a href="https://github.com/trangel/reinforcement_learning">dir></a>]
+[<a href="https://github.com/trangel/Data-Science/reinforcement_learning">dir</a>]
 
 ## Content recommender
 This is part of the CDIPS Data Science 2017 Workshop.   
