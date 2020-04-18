@@ -18,8 +18,7 @@ Practical Reinforcement Learning Assignments
 * [Recap tensorflow](reinforcement_learning/recap_tensorflow.ipynb)    
 * [Cross-entropy method](reinforcement_learning/crossentropy_method.ipynb)    
 * [SARSA](reinforcement_learning/sarsa.ipynb)        
-* [Value Iteration (VI) and Policy Iteration (PI) with Markov Decision Process (MDP)]
-( einforcement_learning/practice_vi.ipynb)    
+* [Value Iteration (VI) and Policy Iteration (PI) with Markov Decision Process (MDP)](reinforcement_learning/practice_vi.ipynb)    
 * [Q-learning](reinforcement_learning/qlearning.ipynb)      
 * [Experience replay within Q-learning](reinforcement_learning/experience_replay.ipynb)   
 * [Approximate Deep Q-learning](reinforcement_learning/practice_approx_qlearning.ipynb)   
