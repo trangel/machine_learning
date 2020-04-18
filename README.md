@@ -1,4 +1,4 @@
-# Data-Science
+# Machine Learning & AI
 
 ## Deep learning    
 <p>
@@ -13,7 +13,19 @@
 </p>
 
 ## Reinforcement learning
+Practical Reinforcement Learning Assignments
 [<a href="https://github.com/trangel/Data-Science/blob/master/reinforcement_learning">dir</a>]
+* [Cross-entropy method](reinforcement_learning/crossentroy_method.ipynb)    
+* SARSA    
+* Value Iteration (VI) and Policy Iteration (PI) with Markov Decision Process (MDP)    
+* Q-learning      
+* Experience replay within Q-learning   
+* Approximate Deep Q-learning   
+* Deep Q-network (approximate Q-learning with experience replay and target networks)      
+* Reinforce    
+* Advantage Actor Critic     
+* Planing into learning: Monte Carlo Tree Search with UCB1-based node selection      
+
 
 ## Content recommender
 This is part of the CDIPS Data Science 2017 Workshop.   
