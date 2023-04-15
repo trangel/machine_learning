@@ -3,34 +3,31 @@ In this repo, I save my personal coursework material and projects
 
 
 ## Large Language Models    
-Large Language Models[<a href="https://github.com/trangel/Data-Science/blob/master/LLM">dir</a>]    
 * [Fine tune BERT for text classification](LLM/Fine-Tune-BERT-for-Text-Classification-with-TensorFlow.ipynb)    
 
 
-## Deep learning    
-### Transfer learning
-  [<a href="https://github.com/trangel/Data-Science/blob/master/tensorflow/keras_transfer_learning"> dir </a>]          
+## Transfer learning
 * [Transfer learning with CNNs using tensorflow hub](keras_transfer_learning/transfer_learning_hub.ipynb)    
 * [Transfer learning with CNNs with Keras](keras_transfer_learning/transfer_learning_vgg.ipynb)    
     
 
-### Deep learning AI assignments    
-#### Computer vision    
-Art+Generation+with+Neural+Style+Transfer+-+v2.ipynb
-Autonomous+driving+application+-+Car+detection+-+v3.ipynb
-Convolution+model+-+Application+-+v1.ipynb
-Convolution+model+-+Step+by+Step+-+v2.ipynb
-Face+Recognition+for+the+Happy+House+-+v3.ipynb
+## Deep learning AI assignments    
+### Computer vision    
+* [Art generaton with neural style transfer](deep_learning_ai/Art+Generation+with+Neural+Style+Transfer+-+v2.ipynb)   
+* [Car detection with YOLO](deep_learning_ai/Autonomous+driving+application+-+Car+detection+-+v3.ipynb)    
+* [CNN for image classification](deep_learning_ai/Convolution+model+-+Application+-+v1.ipynb)    
+* [Convolutions step-by-step](deep_learning_ai/Convolution+model+-+Step+by+Step+-+v2.ipynb)    
+* [Face recognition with FaceNet](deep_learning_ai/Face+Recognition+for+the+Happy+House+-+v3.ipynb)    
 
 
 ### Recurrent Neural Networks    
-Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.ipynb                                                                   
+* [Jazz improvization with LSTM](deep_learning_ai/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.ipynb)   
 ### Language Models with RNN   
-Dinosaurus+Island+--+Character+level+language+model+final+-+v3.ipynb
-Neural+machine+translation+with+attention+-+v4.ipynb
-Operations+on+word+vectors+-+v2.ipynb
+* [Name generation with RNNs](deep_learning_ai/Dinosaurus+Island+--+Character+level+language+model+final+-+v3.ipynb)    
+* [Machine translation with attention](deep_learning_ai/Neural+machine+translation+with+attention+-+v4.ipynb)    
+* [Operations on word vectors, recap](deep_learning_ai/Operations+on+word+vectors+-+v2.ipynb)     
 
-#### General DNN     
+### General DNN     
 Tensorflow+Tutorial+dropout.ipynb
 Tensorflow+Tutorial.ipynb
 Building+your+Deep+Neural+Network+-+Step+by+Step+v8.ipynb
