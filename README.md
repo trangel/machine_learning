@@ -9,31 +9,6 @@ In this repository, I save my personal coursework material and projects
 * [Transfer learning with CNNs using tensorflow hub](keras_transfer_learning/transfer_learning_hub.ipynb)    
 * [Transfer learning with CNNs with Keras](keras_transfer_learning/transfer_learning_vgg.ipynb)    
     
-
-## Deep learning AI assignments    
-### Computer vision    
-* [Art generaton with neural style transfer](deep_learning_ai/Art+Generation+with+Neural+Style+Transfer+-+v2.ipynb)   
-* [Car detection with YOLO](deep_learning_ai/Autonomous+driving+application+-+Car+detection+-+v3.ipynb)    
-* [CNN for image classification](deep_learning_ai/Convolution+model+-+Application+-+v1.ipynb)    
-* [Convolutions step-by-step](deep_learning_ai/Convolution+model+-+Step+by+Step+-+v2.ipynb)    
-* [Face recognition with FaceNet](deep_learning_ai/Face+Recognition+for+the+Happy+House+-+v3.ipynb)    
-
-
-### Recurrent Neural Networks    
-* [Jazz improvization with LSTM](deep_learning_ai/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.ipynb)   
-### Language Models with RNNs  
-* [Name generation with RNNs](deep_learning_ai/Dinosaurus+Island+--+Character+level+language+model+final+-+v3.ipynb)    
-* [Machine translation with attention](deep_learning_ai/Neural+machine+translation+with+attention+-+v4.ipynb)    
-* [Operations on word vectors, recap](deep_learning_ai/Operations+on+word+vectors+-+v2.ipynb)     
-
-### General Deep Neural Networks     
-* [Two-layer neural network for image classification](deep_learning_ai/Deep+Neural+Network+-+Application+v8.ipynb)   
-* [Logistic regression with a neural network mindset](deep_learning_ai/Logistic+Regression+with+a+Neural+Network+mindset+v5.ipynb)   
-* [Deep neural network in TF, step-by-step](deep_learning_ai/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.ipynb)    
-* [Simple neural network with TF and dropout regularization](deep_learning_ai/Tensorflow+Tutorial+dropout.ipynb)
-* [Simple neural network with TF](deep_learning_ai/Tensorflow+Tutorial.ipynb)    
-* [Binary classification with one hidden layer](deep_learning_ai/Planar+data+classification+with+one+hidden+layer+v5.ipynb)    
-
 ## Bayesian modeling  
 Bayesian Modeling assigments 
 * [Variational Auto Encoder to generate faces](bayesian_modeling/TRG_finding_suspect.ipynb)   
@@ -53,6 +28,30 @@ Practical reinforcement learning assignments
 * [Reinforce](reinforcement_learning/practice_reinforce.ipynb)    
 * [Advantage Actor Critic](reinforcement_learning/practice_a3c.ipynb)      
 * [Planing into learning: Monte Carlo Tree Search with UCB1-based node selection](reinforcement_learning/practice_mcts.ipynb)       
+
+## Deep learning AI assignments    
+### Computer vision    
+* [Art generaton with neural style transfer](deep_learning_ai/Art+Generation+with+Neural+Style+Transfer+-+v2.ipynb)   
+* [Car detection with YOLO](deep_learning_ai/Autonomous+driving+application+-+Car+detection+-+v3.ipynb)    
+* [CNN for image classification](deep_learning_ai/Convolution+model+-+Application+-+v1.ipynb)    
+* [Convolutions step-by-step](deep_learning_ai/Convolution+model+-+Step+by+Step+-+v2.ipynb)    
+* [Face recognition with FaceNet](deep_learning_ai/Face+Recognition+for+the+Happy+House+-+v3.ipynb)    
+
+### Recurrent Neural Networks    
+* [Jazz improvization with LSTM](deep_learning_ai/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.ipynb)   
+### Language Models with RNNs  
+* [Name generation with RNNs](deep_learning_ai/Dinosaurus+Island+--+Character+level+language+model+final+-+v3.ipynb)    
+* [Machine translation with attention](deep_learning_ai/Neural+machine+translation+with+attention+-+v4.ipynb)    
+* [Operations on word vectors, recap](deep_learning_ai/Operations+on+word+vectors+-+v2.ipynb)     
+
+### General Deep Neural Networks     
+* [Two-layer neural network for image classification](deep_learning_ai/Deep+Neural+Network+-+Application+v8.ipynb)   
+* [Logistic regression with a neural network mindset](deep_learning_ai/Logistic+Regression+with+a+Neural+Network+mindset+v5.ipynb)   
+* [Deep neural network in TF, step-by-step](deep_learning_ai/Building+your+Deep+Neural+Network+-+Step+by+Step+v8.ipynb)    
+* [Simple neural network with TF and dropout regularization](deep_learning_ai/Tensorflow+Tutorial+dropout.ipynb)
+* [Simple neural network with TF](deep_learning_ai/Tensorflow+Tutorial.ipynb)    
+* [Binary classification with one hidden layer](deep_learning_ai/Planar+data+classification+with+one+hidden+layer+v5.ipynb)    
+
 
 
 ## Content recommender
