@@ -3,21 +3,40 @@ In this repo, I save my personal coursework material and projects
 
 
 ## Large Language Models    
-[<a href="https://github.com/trangel/Data-Science/blob/master/LLM">dir</a>]    
+Large Language Models[<a href="https://github.com/trangel/Data-Science/blob/master/LLM">dir</a>]    
 * [Fine tune BERT for text classification](LLM/Fine-Tune-BERT-for-Text-Classification-with-TensorFlow.ipynb)    
 
 
 ## Deep learning    
-<p>
-<ul>
-<li> Deep learning AI assignments    
-  [<a href="https://github.com/trangel/Data-Science/blob/master/deep_learning_ai"> dir </a>] 
-</li>
-<li> Keras transfer learning
-  [<a href="https://github.com/trangel/Data-Science/blob/master/tensorflow/keras_transfer_learning"> dir </a>]    
-</li>
-</ul>
-</p>
+### Transfer learning
+  [<a href="https://github.com/trangel/Data-Science/blob/master/tensorflow/keras_transfer_learning"> dir </a>]          
+* [Transfer learning with CNNs using tensorflow hub](keras_transfer_learning/transfer_learning_hub.ipynb)    
+* [Transfer learning with CNNs with Keras](keras_transfer_learning/transfer_learning_vgg.ipynb)    
+    
+
+### Deep learning AI assignments    
+#### Computer vision    
+Art+Generation+with+Neural+Style+Transfer+-+v2.ipynb
+Autonomous+driving+application+-+Car+detection+-+v3.ipynb
+Convolution+model+-+Application+-+v1.ipynb
+Convolution+model+-+Step+by+Step+-+v2.ipynb
+Face+Recognition+for+the+Happy+House+-+v3.ipynb
+
+
+### Recurrent Neural Networks    
+Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3.ipynb                                                                   
+### Language Models with RNN   
+Dinosaurus+Island+--+Character+level+language+model+final+-+v3.ipynb
+Neural+machine+translation+with+attention+-+v4.ipynb
+Operations+on+word+vectors+-+v2.ipynb
+
+#### General DNN     
+Tensorflow+Tutorial+dropout.ipynb
+Tensorflow+Tutorial.ipynb
+Building+your+Deep+Neural+Network+-+Step+by+Step+v8.ipynb
+Deep+Neural+Network+-+Application+v8.ipynb
+Logistic+Regression+with+a+Neural+Network+mindset+v5.ipynb
+Planar+data+classification+with+one+hidden+layer+v5.ipynb
 
 ## Reinforcement learning
 Practical Reinforcement Learning Assignments
