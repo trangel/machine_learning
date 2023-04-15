@@ -1,5 +1,5 @@
 # Machine Learning & AI
-In this repo, I save my personal coursework material and projects    
+In this repository, I save my personal coursework material and projects    
 
 ## Large Language Models    
 * [Fine tune BERT for text classification](LLM/Fine-Tune-BERT-for-Text-Classification-with-TensorFlow.ipynb)    
@@ -34,8 +34,13 @@ In this repo, I save my personal coursework material and projects
 * [Simple neural network with TF](deep_learning_ai/Tensorflow+Tutorial.ipynb)    
 * [Binary classification with one hidden layer](deep_learning_ai/Planar+data+classification+with+one+hidden+layer+v5.ipynb)    
 
+## Bayesian modeling  
+Bayesian Modeling assigments 
+* [Variational Auto Encoder to generate faces](bayesian_modeling/TRG_finding_suspect.ipynb)   
+* [Probabilistic modeling with PyMC3, Metropolis Hastings](bayesian_modeling/TRG_mcmc_assignment.ipynb)    
+
 ## Reinforcement learning
-Practical Reinforcement Learning Assignments
+Practical reinforcement learning assignments
 [<a href="https://github.com/trangel/Data-Science/blob/master/reinforcement_learning">dir</a>]     
 * [Recap tensorflow](reinforcement_learning/recap_tensorflow.ipynb)    
 * [Cross-entropy method](reinforcement_learning/crossentropy_method.ipynb)    
