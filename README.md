@@ -2,7 +2,7 @@
 In this repository, I save my personal coursework material and projects    
 
 ## Large Language Models    
-* [Fine tune BERT for text classification](LLM/Fine-Tune-BERT-for-Text-Classification-with-TensorFlow.ipynb)    
+* [Fine tune BERT for text classification](LLM/Fine_Tune_BERT_for_Text_Classification_with_TensorFlow.ipynb)    
 
 
 ## Transfer learning
