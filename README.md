@@ -1,4 +1,11 @@
 # Machine Learning & AI
+In this repo, I save my personal coursework material and projects    
+
+
+## Large Language Models    
+[<a href="https://github.com/trangel/Data-Science/blob/master/LLM">dir</a>]    
+* [Fine tune BERT for text classification](LLM/Fine-Tune-BERT-for-Text-Classification-with-TensorFlow.ipynb)    
+
 
 ## Deep learning    
 <p>
@@ -14,7 +21,7 @@
 
 ## Reinforcement learning
 Practical Reinforcement Learning Assignments
-[<a href="https://github.com/trangel/Data-Science/blob/master/reinforcement_learning">dir</a>     
+[<a href="https://github.com/trangel/Data-Science/blob/master/reinforcement_learning">dir</a>]     
 * [Recap tensorflow](reinforcement_learning/recap_tensorflow.ipynb)    
 * [Cross-entropy method](reinforcement_learning/crossentropy_method.ipynb)    
 * [SARSA](reinforcement_learning/sarsa.ipynb)        

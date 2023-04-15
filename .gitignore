@@ -5,3 +5,4 @@ tracking-purchases/images/graph.pages
 *.swp
 *~
 *.swo
+*/.ipynb_checkpoints/*
