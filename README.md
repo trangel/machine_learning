@@ -6,8 +6,8 @@ In this repository, I save my personal coursework material and projects
 
 
 ## Transfer learning
-* [Transfer learning with CNNs using tensorflow hub](keras_transfer_learning/transfer_learning_hub.ipynb)    
-* [Transfer learning with CNNs with Keras](keras_transfer_learning/transfer_learning_vgg.ipynb)    
+* [Transfer learning with CNNs using tensorflow hub](transfer_learning/transfer_learning_hub.ipynb)    
+* [Transfer learning with CNNs with Keras](transfer_learning/transfer_learning_vgg.ipynb)    
     
 ## Bayesian modeling  
 Bayesian Modeling assigments 
