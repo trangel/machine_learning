@@ -2,8 +2,8 @@
 In this repository, I save my personal coursework material and projects    
 
 ## Large Language Models    
-* [Fine tune BERT for text classification](LLM/Fine_Tune_BERT_for_Text_Classification_with_TensorFlow.ipynb)    
 * [Fine tune GPT-2 to write British literature](LLM/Fine_tune_a_British_literature_GPT_2_Model_with_Huggingface.ipynb)   
+* [Fine tune BERT for text classification](LLM/Fine_Tune_BERT_for_Text_Classification_with_TensorFlow.ipynb)    
 
 ## Transfer learning
 * [Transfer learning with CNNs using tensorflow hub](transfer_learning/transfer_learning_hub.py)    
