@@ -26,7 +26,7 @@ Practical reinforcement learning assignments
 * [Approximate Deep Q-learning](reinforcement_learning/practice_approx_qlearning.ipynb)   
 * [Deep Q-network (approximate Q-learning with experience replay and target networks)](reinforcement_learning/dqn_atari.ipynb)      
 * [Reinforce](reinforcement_learning/practice_reinforce.ipynb)    
-* [Advantage Actor Critic](reinforcement_learning/practice_a2c.ipynb)      
+* [Advantage Actor Critic](reinforcement_learning/practice_a3c.ipynb)      
 * [Planing into learning: Monte Carlo Tree Search with UCB1-based node selection](reinforcement_learning/practice_mcts.ipynb)       
 
 ## Deep learning AI assignments    
